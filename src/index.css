@@ -137,4 +137,55 @@ All colors MUST be HSL.
   .signal-transition {
     transition: var(--transition-signal);
   }
+
+  .wave-background {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .wave-background::before,
+  .wave-background::after,
+  .wave-background .wave-layer {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200%;
+    height: 120%;
+    background: linear-gradient(
+      135deg,
+      hsl(var(--navy-deep) / 0.8) 0%,
+      hsl(var(--electric-blue) / 0.6) 50%,
+      hsl(var(--navy-deep) / 0.9) 100%
+    );
+    border-radius: 50%;
+    transform-origin: center;
+  }
+
+  .wave-background::before {
+    z-index: 1;
+    animation: wave-1 8s ease-in-out infinite;
+  }
+
+  .wave-background::after {
+    z-index: 2;
+    animation: wave-2 10s ease-in-out infinite reverse;
+    background: linear-gradient(
+      45deg,
+      hsl(var(--electric-blue) / 0.4) 0%,
+      hsl(var(--navy-deep) / 0.7) 50%,
+      hsl(var(--electric-blue) / 0.5) 100%
+    );
+  }
+
+  .wave-background .wave-layer {
+    z-index: 3;
+    animation: wave-3 12s ease-in-out infinite;
+    background: linear-gradient(
+      90deg,
+      hsl(var(--navy-deep) / 0.6) 0%,
+      hsl(var(--electric-blue) / 0.3) 50%,
+      hsl(var(--navy-deep) / 0.8) 100%
+    );
+  }
 }

@@ -10,7 +10,9 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackground})` }}
       >
-        <div className="absolute inset-0 bg-navy/60"></div>
+        <div className="absolute inset-0 wave-background">
+          <div className="wave-layer"></div>
+        </div>
       </div>
       
       {/* Floating Elements */}

@@ -87,10 +87,55 @@ export default {
             height: "0",
           },
         },
+        "wave-1": {
+          "0%, 100%": {
+            transform: "translateX(-50%) translateY(0px) rotate(0deg)",
+          },
+          "25%": {
+            transform: "translateX(-50%) translateY(-10px) rotate(1deg)",
+          },
+          "50%": {
+            transform: "translateX(-50%) translateY(-5px) rotate(0deg)",
+          },
+          "75%": {
+            transform: "translateX(-50%) translateY(-8px) rotate(-1deg)",
+          },
+        },
+        "wave-2": {
+          "0%, 100%": {
+            transform: "translateX(-50%) translateY(0px) rotate(0deg)",
+          },
+          "25%": {
+            transform: "translateX(-50%) translateY(-8px) rotate(-1deg)",
+          },
+          "50%": {
+            transform: "translateX(-50%) translateY(-12px) rotate(0deg)",
+          },
+          "75%": {
+            transform: "translateX(-50%) translateY(-6px) rotate(1deg)",
+          },
+        },
+        "wave-3": {
+          "0%, 100%": {
+            transform: "translateX(-50%) translateY(0px) rotate(0deg)",
+          },
+          "25%": {
+            transform: "translateX(-50%) translateY(-6px) rotate(0.5deg)",
+          },
+          "50%": {
+            transform: "translateX(-50%) translateY(-8px) rotate(0deg)",
+          },
+          "75%": {
+            transform: "translateX(-50%) translateY(-10px) rotate(-0.5deg)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "wave-1": "wave-1 8s ease-in-out infinite",
+        "wave-2": "wave-2 10s ease-in-out infinite reverse",
+        "wave-3": "wave-3 12s ease-in-out infinite",
       },
     },
   },
