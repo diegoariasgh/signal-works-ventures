@@ -39,7 +39,7 @@ const About = () => {
                   <TrendingUp className="w-8 h-8 text-electric mr-3" />
                   <h3 className="text-xl font-semibold font-space-grotesk">Proven Track Record</h3>
                 </div>
-                <p className="text-muted-foreground">Strategy support for founders and workshop delivery for leading institutions including Plug and Play, African Development Bank, Open Start.</p>
+                <p className="text-muted-foreground">Strategy support for founders and workshop delivery for leading institutions including Plug and Play, African Development Bank, Open Startup and others.</p>
               </div>
             </div>
           </div>
