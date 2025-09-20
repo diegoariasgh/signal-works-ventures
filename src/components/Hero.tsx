@@ -38,9 +38,11 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="signal" size="lg" className="group">
-              Book an Intro Call
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 signal-transition" />
+            <Button variant="signal" size="lg" className="group" asChild>
+              <a href="mailto:diego@signalworks.xyz">
+                Get in Touch
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 signal-transition" />
+              </a>
             </Button>
             
             <Button variant="outline-light" size="lg">
