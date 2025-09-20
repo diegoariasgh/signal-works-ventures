@@ -33,7 +33,19 @@ const Footer = () => {
             </div>
             
             {/* Contact Links */}
-            
+            <div className="flex flex-col sm:flex-row items-center gap-6 text-center md:text-left">
+              <a href="mailto:diego@signalworks.xyz" className="text-muted-foreground hover:text-electric signal-transition font-medium">
+                diego@signalworks.xyz
+              </a>
+              <span className="hidden sm:block text-muted-foreground/40">•</span>
+              <a href="https://signalworks.xyz" className="text-muted-foreground hover:text-electric signal-transition font-medium">
+                signalworks.xyz
+              </a>
+              <span className="hidden sm:block text-muted-foreground/40">•</span>
+              <a href="#" className="text-muted-foreground hover:text-electric signal-transition font-medium">
+                LinkedIn
+              </a>
+            </div>
           </div>
           
           {/* Divider */}
