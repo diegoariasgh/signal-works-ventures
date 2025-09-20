@@ -17,10 +17,9 @@ const CTA = () => {
               <Calendar className="w-6 h-6 text-white" />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold font-space-grotesk text-white mb-6">
-              Ready to Cut Through
-              <span className="block text-electric">the Noise?</span>
+              We partner with mission-aligned teams to turn intent into execution.
             </h2>
-            <p className="text-xl text-slate-light/80 max-w-2xl mx-auto leading-relaxed">Let's discuss how we can help you r strategies and make confident decisions in complex markets.</p>
+            <p className="text-xl text-slate-light/80 max-w-2xl mx-auto leading-relaxed">Share a few lines on your goal, and we'll take it from there.</p>
           </div>
           
           {/* CTA Buttons */}
