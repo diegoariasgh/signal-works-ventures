@@ -31,12 +31,7 @@ const CTA = () => {
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 signal-transition" />
             </Button>
             
-            <Button 
-              variant="outline-light" 
-              size="lg" 
-              className="group"
-              onClick={() => window.open('mailto:diego@signalworks.xyz', '_blank')}
-            >
+            <Button variant="outline-light" size="lg" className="group" onClick={() => window.open('mailto:diego@signalworks.xyz', '_blank')}>
               <Mail className="w-5 h-5 mr-2" />
               Contact Us
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 signal-transition" />
@@ -44,19 +39,7 @@ const CTA = () => {
           </div>
           
           {/* Contact Info */}
-          <div className="pt-8 border-t border-white/10">
-            <p className="text-slate-light/60 text-sm mb-4">
-              Or reach out directly
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-slate-light">
-              <a href="mailto:hello@signalworks.xyz" className="flex items-center hover:text-electric signal-transition">
-                <Mail className="w-4 h-4 mr-2" />
-                hello@signalworks.xyz
-              </a>
-              <span className="hidden sm:block text-slate-light/40">•</span>
-              <span className="text-slate-light/80">Calendly link available</span>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>;
