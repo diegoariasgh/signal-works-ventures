@@ -37,8 +37,10 @@ const Header = () => {
           </nav>
           
           <div className="justify-self-end">
-            <Button variant="signal" size="sm">
-              Book a Call
+            <Button variant="signal" size="sm" asChild>
+              <a href="https://zcal.co/diegoarias" target="_blank" rel="noopener noreferrer">
+                Book a Call
+              </a>
             </Button>
           </div>
         </div>
