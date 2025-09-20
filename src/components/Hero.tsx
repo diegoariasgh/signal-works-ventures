@@ -57,6 +57,8 @@ const Hero = () => {
               <span className="font-medium">Plug and Play</span>
               <span className="font-medium">Open Startup (OST)</span>
               <span className="font-medium">NYU Stern</span>
+              <span className="font-medium">African Development Bank</span>
+              <span className="font-medium">VC4A</span>
             </div>
           </div>
         </div>
