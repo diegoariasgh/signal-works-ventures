@@ -9,8 +9,20 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             {/* Logo & Brand */}
             <div className="flex items-center space-x-3 mb-6 md:mb-0">
-              <div className="w-10 h-10 signal-gradient rounded-lg flex items-center justify-center">
-                <Signal className="w-5 h-5 text-white" />
+              <div className="relative w-10 h-10">
+                {/* Satellite/Signal Icon */}
+                <svg viewBox="0 0 40 40" className="w-10 h-10">
+                  {/* Central signal point */}
+                  <circle cx="20" cy="20" r="2.5" className="fill-electric" />
+                  
+                  {/* Orbit rings */}
+                  <circle cx="20" cy="20" r="7.5" className="stroke-navy stroke-[2] fill-none opacity-80" />
+                  <circle cx="20" cy="20" r="14" className="stroke-electric stroke-[1.5] fill-none opacity-60" />
+                  
+                  {/* Signal waves */}
+                  <path d="M10 20 Q15 15, 20 20 Q25 25, 30 20" className="stroke-electric stroke-[2] fill-none opacity-70" />
+                  <path d="M7 20 Q14 12, 20 20 Q26 28, 33 20" className="stroke-navy stroke-[1.5] fill-none opacity-50" />
+                </svg>
               </div>
               <div>
                 <h3 className="text-xl font-bold font-space-grotesk text-foreground">
@@ -25,10 +37,10 @@ const Footer = () => {
             {/* Contact Links */}
             <div className="flex flex-col sm:flex-row items-center gap-6 text-center md:text-left">
               <a 
-                href="mailto:hello@signalworks.xyz" 
+                href="mailto:diego@signalworks.xyz" 
                 className="text-muted-foreground hover:text-electric signal-transition font-medium"
               >
-                hello@signalworks.xyz
+                diego@signalworks.xyz
               </a>
               <span className="hidden sm:block text-muted-foreground/40">•</span>
               <a 
@@ -53,7 +65,7 @@ const Footer = () => {
           {/* Bottom Bar */}
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
             <p className="mb-4 md:mb-0">
-              © 2024 Signal Works. All rights reserved.
+              © Signal Works — Mission-Aligned. Outcome-Driven.
             </p>
             <p className="text-center md:text-right max-w-md">
               Boutique advisory supporting funds, startups, and corporates across MENA and Europe.

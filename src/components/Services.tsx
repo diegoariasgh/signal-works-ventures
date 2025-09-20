@@ -10,7 +10,7 @@ const Services = () => {
       description: "Strategic support for institutional capital",
       features: [
         "Fund setup and strategy",
-        "Fundraising support and LP engagement",
+        "Fundraising support and LP engagement", 
         "Portfolio structuring and secondaries"
       ],
       color: "text-electric"

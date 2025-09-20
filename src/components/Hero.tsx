@@ -29,11 +29,11 @@ const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold font-space-grotesk text-white mb-6 leading-tight">
-            Cut Through the
-            <span className="block text-electric">Signal & Noise</span>
+            <span className="block text-electric font-black">Mission-Aligned.</span>
+            <span className="block font-black">Outcome-Driven.</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-slate-light mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-slate-light mb-12 max-w-3xl mx-auto leading-relaxed font-medium">
             Boutique advisory supporting funds, startups, and corporates in venture and innovation across MENA and Europe.
           </p>
           
