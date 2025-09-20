@@ -31,10 +31,12 @@ const CTA = () => {
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 signal-transition" />
             </Button>
             
-            <Button variant="outline-light" size="lg" className="group" onClick={() => window.open('mailto:diego@signalworks.xyz', '_blank')}>
-              <Mail className="w-5 h-5 mr-2" />
-              Contact Us
-              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 signal-transition" />
+            <Button variant="outline-light" size="lg" className="group" asChild>
+              <a href="mailto:diego@signalworks.xyz">
+                <Mail className="w-5 h-5 mr-2" />
+                Contact Us
+                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 signal-transition" />
+              </a>
             </Button>
           </div>
           
