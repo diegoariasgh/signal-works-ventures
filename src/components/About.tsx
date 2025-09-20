@@ -1,8 +1,6 @@
 import { Users, Globe, TrendingUp } from "lucide-react";
-
 const About = () => {
-  return (
-    <section id="about" className="py-24 bg-background">
+  return <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
@@ -42,9 +40,7 @@ const About = () => {
                   <Globe className="w-8 h-8 text-electric mr-3" />
                   <h3 className="text-xl font-semibold font-space-grotesk">Global Reach</h3>
                 </div>
-                <p className="text-muted-foreground">
-                  Active across MENA and European markets with deep regional expertise and cross-border transaction experience.
-                </p>
+                <p className="text-muted-foreground">Active across the GCC and North African markets with deep regional expertise and cross-border transaction experience.</p>
               </div>
               
               <div className="bg-card p-6 rounded-2xl shadow-sm border">
@@ -52,16 +48,12 @@ const About = () => {
                   <TrendingUp className="w-8 h-8 text-electric mr-3" />
                   <h3 className="text-xl font-semibold font-space-grotesk">Proven Track Record</h3>
                 </div>
-                <p className="text-muted-foreground">
-                  Strategy support for founders and workshop delivery for leading institutions including Plug and Play and NYU Stern.
-                </p>
+                <p className="text-muted-foreground">Strategy support for founders and workshop delivery for leading institutions including Plug and Play, African Development Bank, Open Start.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;
