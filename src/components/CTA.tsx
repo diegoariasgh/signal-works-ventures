@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Mail, ArrowRight } from "lucide-react";
 const CTA = () => {
-  return <section className="py-24 bg-navy relative overflow-hidden">
+  return <section id="contact" className="py-24 bg-navy relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-32 h-32 signal-glow rounded-full opacity-20"></div>
