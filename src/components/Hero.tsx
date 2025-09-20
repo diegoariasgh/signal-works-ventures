@@ -1,5 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Signal } from "lucide-react";
+import plugAndPlayLogo from "@/assets/logos/plug-and-play-logo.png";
+import openStartupLogo from "@/assets/logos/open-startup-logo.png";
+import nyuSternLogo from "@/assets/logos/nyu-stern-official.png";
+import afdbLogo from "@/assets/logos/afdb-logo.png";
+import vc4aLogo from "@/assets/logos/vc4a-logo.png";
 
 const Hero = () => {
   return (
@@ -45,12 +50,32 @@ const Hero = () => {
           {/* Trust Indicators */}
           <div className="mt-16 pt-8 border-t border-white/10">
             <p className="text-slate-light/80 text-sm mb-4">Trusted by leading institutions</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 text-slate-light/60">
-              <span className="font-medium">Plug and Play</span>
-              <span className="font-medium">Open Startup (OST)</span>
-              <span className="font-medium">NYU Stern</span>
-              <span className="font-medium">African Development Bank</span>
-              <span className="font-medium">VC4A</span>
+            <div className="flex flex-wrap justify-center items-center gap-8 opacity-70">
+              <img 
+                src={plugAndPlayLogo} 
+                alt="Plug and Play" 
+                className="h-8 w-auto brightness-0 invert opacity-60 hover:opacity-100 signal-transition"
+              />
+              <img 
+                src={openStartupLogo} 
+                alt="Open Startup (OST)" 
+                className="h-8 w-auto brightness-0 invert opacity-60 hover:opacity-100 signal-transition"
+              />
+              <img 
+                src={nyuSternLogo} 
+                alt="NYU Stern" 
+                className="h-8 w-auto brightness-0 invert opacity-60 hover:opacity-100 signal-transition"
+              />
+              <img 
+                src={afdbLogo} 
+                alt="African Development Bank" 
+                className="h-8 w-auto brightness-0 invert opacity-60 hover:opacity-100 signal-transition"
+              />
+              <img 
+                src={vc4aLogo} 
+                alt="VC4A" 
+                className="h-8 w-auto brightness-0 invert opacity-60 hover:opacity-100 signal-transition"
+              />
             </div>
           </div>
         </div>
