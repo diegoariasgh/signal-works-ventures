@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Mail, ArrowRight } from "lucide-react";
-
 const CTA = () => {
-  return (
-    <section className="py-24 bg-navy relative overflow-hidden">
+  return <section className="py-24 bg-navy relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-10 left-10 w-32 h-32 signal-glow rounded-full opacity-20"></div>
@@ -22,18 +20,12 @@ const CTA = () => {
               Ready to Cut Through
               <span className="block text-electric">the Noise?</span>
             </h2>
-            <p className="text-xl text-slate-light/80 max-w-2xl mx-auto leading-relaxed">
-              Let's discuss how Signal Works can help you frame sharper strategies and make confident decisions in complex markets.
-            </p>
+            <p className="text-xl text-slate-light/80 max-w-2xl mx-auto leading-relaxed">Let's discuss how we can help you r strategies and make confident decisions in complex markets.</p>
           </div>
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-            <Button 
-              variant="signal" 
-              size="lg" 
-              className="group bg-electric hover:bg-electric-light text-white shadow-xl"
-            >
+            <Button variant="signal" size="lg" className="group bg-electric hover:bg-electric-light text-white shadow-xl">
               <Calendar className="w-5 h-5 mr-2" />
               Book an Intro Call
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 signal-transition" />
@@ -52,10 +44,7 @@ const CTA = () => {
               Or reach out directly
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center text-slate-light">
-              <a 
-                href="mailto:hello@signalworks.xyz" 
-                className="flex items-center hover:text-electric signal-transition"
-              >
+              <a href="mailto:hello@signalworks.xyz" className="flex items-center hover:text-electric signal-transition">
                 <Mail className="w-4 h-4 mr-2" />
                 hello@signalworks.xyz
               </a>
@@ -65,8 +54,6 @@ const CTA = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CTA;

@@ -1,8 +1,6 @@
 import { Signal } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-background border-t border-border py-12">
+  return <footer className="bg-background border-t border-border py-12">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Main Footer Content */}
@@ -36,24 +34,15 @@ const Footer = () => {
             
             {/* Contact Links */}
             <div className="flex flex-col sm:flex-row items-center gap-6 text-center md:text-left">
-              <a 
-                href="mailto:diego@signalworks.xyz" 
-                className="text-muted-foreground hover:text-electric signal-transition font-medium"
-              >
+              <a href="mailto:diego@signalworks.xyz" className="text-muted-foreground hover:text-electric signal-transition font-medium">
                 diego@signalworks.xyz
               </a>
               <span className="hidden sm:block text-muted-foreground/40">•</span>
-              <a 
-                href="https://signalworks.xyz" 
-                className="text-muted-foreground hover:text-electric signal-transition font-medium"
-              >
+              <a href="https://signalworks.xyz" className="text-muted-foreground hover:text-electric signal-transition font-medium">
                 signalworks.xyz
               </a>
               <span className="hidden sm:block text-muted-foreground/40">•</span>
-              <a 
-                href="#" 
-                className="text-muted-foreground hover:text-electric signal-transition font-medium"
-              >
+              <a href="#" className="text-muted-foreground hover:text-electric signal-transition font-medium">
                 LinkedIn
               </a>
             </div>
@@ -67,14 +56,10 @@ const Footer = () => {
             <p className="mb-4 md:mb-0">
               © Signal Works — Mission-Aligned. Outcome-Driven.
             </p>
-            <p className="text-center md:text-right max-w-md">
-              Boutique advisory supporting funds, startups, and corporates across MENA and Europe.
-            </p>
+            <p className="text-center md:text-right max-w-md">Boutique advisory supporting funds, startups, and corporates across the MENA region.</p>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
