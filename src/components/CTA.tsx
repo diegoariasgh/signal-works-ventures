@@ -16,7 +16,7 @@ const CTA = () => {
             <div className="inline-flex items-center justify-center p-2 bg-electric/20 rounded-xl mb-6">
               <Calendar className="w-6 h-6 text-white" />
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold font-space-grotesk text-white mb-6">We partner with mission-aligned teams to turn intent into execution.</h2>
+            <h2 className="text-4xl md:text-5xl font-bold font-space-grotesk text-white mb-6">We partner with mission-aligned teams <span className="text-electric">to turn intent into execution</span>.</h2>
             <p className="text-xl text-slate-light/80 max-w-2xl mx-auto leading-relaxed">Share a few lines on your goal, and we'll take it from there.</p>
           </div>
           
