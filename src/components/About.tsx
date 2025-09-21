@@ -19,23 +19,6 @@ const About = () => {
               <p className="text-lg text-muted-foreground leading-relaxed mb-6">Signal Works is a boutique advisory for funds, corporates, and startups in venture and innovation. With 7+ years across the GCC, North Africa, and Europe, we combine early-stage investing, fund operations, and GTM/partnership strategy to deliver clear, actionable plans.</p>
               
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">Our work spans fund setup and strategy, fundraising & LP engagement, portfolio structuring/secondaries, accelerator and partnership programs, and regional expansion for high-growth startups.</p>
-              
-              {/* Founder Card */}
-              <div className="bg-card p-6 rounded-2xl shadow-sm border">
-                <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
-                    <img 
-                      src={founderIllustration} 
-                      alt="Diego Arias García - Founder illustration" 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold font-space-grotesk text-foreground mb-2">Led by Diego Arias García</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">Background with global VC platforms and accelerators and boutique funds, operating across the GCC & North Africa. Built fund ops from the ground up, managed LP engagement, and supported VC-backed startups on fundraising and GTM.</p>
-                  </div>
-                </div>
-              </div>
             </div>
             
             <div className="space-y-8">
@@ -54,6 +37,25 @@ const About = () => {
                   <h3 className="text-xl font-semibold font-space-grotesk">Proven Track Record</h3>
                 </div>
                 <p className="text-muted-foreground">Strategy support and workshops for founders and teams; engagements with Plug and Play, Open Startup (OST), NYU Stern, and programs backed by the African Development Bank.</p>
+              </div>
+            </div>
+          </div>
+          
+          {/* Founder Card - Full Width Below */}
+          <div className="mt-16">
+            <div className="bg-card p-8 rounded-2xl shadow-sm border">
+              <div className="flex items-center gap-6">
+                <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
+                  <img 
+                    src={founderIllustration} 
+                    alt="Diego Arias García - Founder illustration" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold font-space-grotesk text-foreground mb-3">Led by Diego Arias García</h3>
+                  <p className="text-muted-foreground leading-relaxed max-w-4xl">Background with global VC platforms and accelerators and boutique funds, operating across the GCC & North Africa. Built fund ops from the ground up, managed LP engagement, and supported VC-backed startups on fundraising and GTM.</p>
+                </div>
               </div>
             </div>
           </div>
