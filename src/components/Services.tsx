@@ -13,7 +13,7 @@ const Services = () => {
     title: "Corporates & Accelerators",
     description: "Innovation programs and partnerships",
     features: ["Program and partnership design", "Startup scouting and evaluation", "Market entry and innovation strategy"],
-    color: "text-navy"
+    color: "text-electric"
   }, {
     icon: Rocket,
     title: "Startups & Founders",
