@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { TrendingUp, Rocket, Users } from "lucide-react";
+import { TrendingUp, Rocket, Building2 } from "lucide-react";
 const Services = () => {
   const services = [{
     icon: TrendingUp,
@@ -9,7 +9,7 @@ const Services = () => {
     features: ["Fund setup and strategy", "Fundraising support and LP engagement", "Portfolio structuring and secondaries"],
     color: "text-electric"
   }, {
-    icon: Users,
+    icon: Building2,
     title: "Corporates & Accelerators",
     description: "Innovation programs and partnerships",
     features: ["Program and partnership design", "Startup scouting and evaluation", "Market entry and innovation strategy"],
