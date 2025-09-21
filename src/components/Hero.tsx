@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Signal } from "lucide-react";
+import { ArrowRight, MessageSquare, Target, Handshake, TrendingUp } from "lucide-react";
 import sternLogo from "@/assets/stern-logo.webp";
 import vc4aLogo from "@/assets/vc4a-logo.png";
 import adbLogo from "@/assets/adb-logo.png";
@@ -18,10 +18,25 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
-          {/* Signal Icon */}
+          {/* Service Areas Grid */}
           <div className="flex justify-center mb-8">
-            <div className="p-4 bg-electric/10 rounded-2xl backdrop-blur-sm">
-              <Signal className="w-12 h-12 text-electric" />
+            <div className="grid grid-cols-2 gap-3 p-4 bg-electric/10 rounded-2xl backdrop-blur-sm">
+              <div className="flex flex-col items-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
+                <MessageSquare className="w-6 h-6 text-electric mb-1" />
+                <span className="text-xs text-white/80 font-medium">Communications</span>
+              </div>
+              <div className="flex flex-col items-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
+                <Target className="w-6 h-6 text-electric mb-1" />
+                <span className="text-xs text-white/80 font-medium">Strategy</span>
+              </div>
+              <div className="flex flex-col items-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
+                <Handshake className="w-6 h-6 text-electric mb-1" />
+                <span className="text-xs text-white/80 font-medium">Partnerships</span>
+              </div>
+              <div className="flex flex-col items-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
+                <TrendingUp className="w-6 h-6 text-electric mb-1" />
+                <span className="text-xs text-white/80 font-medium">Investment</span>
+              </div>
             </div>
           </div>
           
