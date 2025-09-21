@@ -28,7 +28,7 @@ const Header = () => {
           
           <div className="md:justify-self-end">
             <Button variant="signal" size="sm" asChild>
-              <a href="https://zcal.co/diegoarias" target="_blank" rel="noopener noreferrer">
+              <a href="https://zcal.co/diegoarias/30min" target="_blank" rel="noopener noreferrer">
                 Book a Call
               </a>
             </Button>
