@@ -8,15 +8,9 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             {/* Logo & Brand */}
             <div className="flex items-center space-x-3 mb-6 md:mb-0">
-              <img 
-                src={signalWorksLogo} 
-                alt="Signal Works Logo" 
-                className="h-10 w-auto"
-              />
+              <img src={signalWorksLogo} alt="Signal Works Logo" className="h-10 w-auto" />
               <div>
-                <p className="text-sm text-muted-foreground">
-                  Boutique Advisory
-                </p>
+                
               </div>
             </div>
             
@@ -39,9 +33,7 @@ const Footer = () => {
           
           {/* Bottom Bar */}
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
-            <p className="mb-4 md:mb-0">
-              © Signal Works — Mission-Aligned. Outcome-Driven.
-            </p>
+            <p className="mb-4 md:mb-0">© Signal Works, 2025</p>
             <p className="text-center md:text-right max-w-md">Boutique advisory supporting funds, startups, and corporates across the MENA region.</p>
           </div>
         </div>
