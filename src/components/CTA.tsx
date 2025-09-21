@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Mail, ArrowRight } from "lucide-react";
+import { Calendar, MessageCircle, ArrowRight } from "lucide-react";
 const CTA = () => {
   return <section id="contact" className="py-24 bg-navy relative overflow-hidden">
       {/* Background Elements */}
@@ -30,9 +30,9 @@ const CTA = () => {
               </a>
             </Button>
             
-            <Button variant="outline-light" size="lg" className="group" onClick={() => window.open('mailto:diego@signalworks.xyz', '_blank')}>
-              <Mail className="w-5 h-5 mr-2" />
-              Contact Us
+            <Button variant="outline-light" size="lg" className="group" onClick={() => window.open('https://wa.me/+971547109660', '_blank')}>
+              <MessageCircle className="w-5 h-5 mr-2" />
+              Chat with us
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 signal-transition" />
             </Button>
           </div>
