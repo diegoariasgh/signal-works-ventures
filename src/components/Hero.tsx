@@ -54,27 +54,27 @@ const Hero = () => {
               <img 
                 src={plugandplayLogo} 
                 alt="Plug and Play" 
-                className="h-8 md:h-10 filter grayscale opacity-60 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
+                className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:opacity-90 transition-all duration-300 drop-shadow-sm"
               />
               <img 
                 src={sternLogo} 
                 alt="NYU Stern" 
-                className="h-8 md:h-10 filter grayscale opacity-60 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
+                className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:opacity-90 transition-all duration-300 drop-shadow-sm"
               />
               <img 
                 src={adbLogo} 
                 alt="African Development Bank" 
-                className="h-8 md:h-10 filter grayscale opacity-60 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
+                className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:opacity-90 transition-all duration-300 drop-shadow-sm"
               />
               <img 
                 src={vc4aLogo} 
                 alt="VC4A" 
-                className="h-8 md:h-10 filter grayscale opacity-60 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
+                className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:opacity-90 transition-all duration-300 drop-shadow-sm"
               />
               <img 
                 src={atsfLogo} 
                 alt="Africa Tech Startup Forum" 
-                className="h-8 md:h-10 filter grayscale opacity-60 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
+                className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:opacity-90 transition-all duration-300 drop-shadow-sm"
               />
             </div>
           </div>
