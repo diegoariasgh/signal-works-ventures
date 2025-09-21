@@ -188,4 +188,14 @@ All colors MUST be HSL.
       hsl(var(--navy-deep) / 0.8) 100%
     );
   }
+
+  /* Logo Carousel Animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }
