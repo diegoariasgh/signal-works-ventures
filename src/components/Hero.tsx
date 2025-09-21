@@ -1,5 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Signal } from "lucide-react";
+import sternLogo from "@/assets/stern-logo.webp";
+import vc4aLogo from "@/assets/vc4a-logo.png";
+import adbLogo from "@/assets/adb-logo.png";
+import atsfLogo from "@/assets/atsf-logo.png";
+import plugandplayLogo from "@/assets/plugandplay-logo.png";
 
 const Hero = () => {
   return (
@@ -42,15 +47,35 @@ const Hero = () => {
             </Button>
           </div>
           
-          {/* Trust Indicators */}
+          {/* Previous Projects */}
           <div className="mt-16 pt-8 border-t border-white/10">
-            <p className="text-slate-light/80 text-sm mb-4">Trusted by leading institutions</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 text-slate-light/60">
-              <span className="font-medium">Plug and Play</span>
-              <span className="font-medium">Open Startup (OST)</span>
-              <span className="font-medium">NYU Stern</span>
-              <span className="font-medium">African Development Bank</span>
-              <span className="font-medium">VC4A</span>
+            <p className="text-slate-light/80 text-sm mb-6">Previous projects</p>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+              <img 
+                src={plugandplayLogo} 
+                alt="Plug and Play" 
+                className="h-8 md:h-10 filter grayscale opacity-60 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
+              />
+              <img 
+                src={sternLogo} 
+                alt="NYU Stern" 
+                className="h-8 md:h-10 filter grayscale opacity-60 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
+              />
+              <img 
+                src={adbLogo} 
+                alt="African Development Bank" 
+                className="h-8 md:h-10 filter grayscale opacity-60 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
+              />
+              <img 
+                src={vc4aLogo} 
+                alt="VC4A" 
+                className="h-8 md:h-10 filter grayscale opacity-60 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
+              />
+              <img 
+                src={atsfLogo} 
+                alt="Africa Tech Startup Forum" 
+                className="h-8 md:h-10 filter grayscale opacity-60 hover:opacity-80 hover:grayscale-0 transition-all duration-300"
+              />
             </div>
           </div>
         </div>
