@@ -15,9 +15,7 @@ const About = () => {
           {/* Main Content */}
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">Signal Works is a boutique advisory for funds, corporates, and startups in venture and innovation. With 7+ years across the GCC, North Africa, and Europe, we combine early-stage investing, fund operations, and GTM/partnership strategy to deliver clear, actionable plans.
-
-Signal Works is a boutique advisory supporting funds, startups, and corporates in venture and innovation. With over seven years of experience across MENA and the GCC, we bring together expertise in early-stage investing, fund strategy and operations, partnership and go-to-market.</p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">Signal Works is a boutique advisory for funds, corporates, and startups in venture and innovation. With 7+ years across the GCC, North Africa, and Europe, we combine early-stage investing, fund operations, and GTM/partnership strategy to deliver clear, actionable plans.</p>
               
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">Our work spans fund setup and strategy, fundraising & LP engagement, portfolio structuring/secondaries, accelerator and partnership programs, and regional expansion for high-growth startups.</p>
               
