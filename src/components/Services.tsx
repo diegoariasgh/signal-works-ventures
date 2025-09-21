@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { TrendingUp, Rocket, Building2 } from "lucide-react";
+import { Settings, Rocket, Building2, TrendingUp } from "lucide-react";
 const Services = () => {
   const services = [{
     icon: TrendingUp,
@@ -26,7 +26,7 @@ const Services = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center p-2 bg-electric/10 rounded-xl mb-6">
-            <TrendingUp className="w-6 h-6 text-electric" />
+            <Settings className="w-6 h-6 text-electric" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold font-space-grotesk text-foreground mb-6">Services</h2>
           <div className="w-24 h-1 signal-gradient mx-auto mb-8 rounded-full"></div>
