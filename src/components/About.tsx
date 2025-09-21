@@ -1,4 +1,5 @@
 import { Users, Globe, TrendingUp } from "lucide-react";
+import founderIllustration from "@/assets/founder-illustration.jpeg";
 const About = () => {
   return <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
@@ -19,7 +20,22 @@ const About = () => {
               
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">Our work spans fund setup and strategy, fundraising & LP engagement, portfolio structuring/secondaries, accelerator and partnership programs, and regional expansion for high-growth startups.</p>
               
-              
+              {/* Founder Card */}
+              <div className="bg-card p-6 rounded-2xl shadow-sm border">
+                <div className="flex items-center gap-4">
+                  <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
+                    <img 
+                      src={founderIllustration} 
+                      alt="Diego Arias García - Founder illustration" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold font-space-grotesk text-foreground mb-2">Led by Diego Arias García</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">Background with global VC platforms and accelerators and boutique funds, operating across the GCC & North Africa. Built fund ops from the ground up, managed LP engagement, and supported VC-backed startups on fundraising and GTM.</p>
+                  </div>
+                </div>
+              </div>
             </div>
             
             <div className="space-y-8">
