@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageSquare, Target, Handshake, TrendingUp } from "lucide-react";
+import { ArrowRight, MessageSquare, Target, Handshake, DollarSign } from "lucide-react";
 import sternLogo from "@/assets/stern-logo.webp";
 import vc4aLogo from "@/assets/vc4a-logo.png";
 import adbLogo from "@/assets/adb-logo.png";
@@ -18,24 +18,20 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
-          {/* Service Areas Grid */}
+          {/* Service Areas */}
           <div className="flex justify-center mb-8">
-            <div className="grid grid-cols-2 gap-3 p-4 bg-electric/10 rounded-2xl backdrop-blur-sm">
-              <div className="flex flex-col items-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
-                <MessageSquare className="w-6 h-6 text-electric mb-1" />
-                <span className="text-xs text-white/80 font-medium">Communications</span>
+            <div className="flex gap-3 p-4 bg-electric/10 rounded-2xl backdrop-blur-sm">
+              <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
+                <MessageSquare className="w-6 h-6 text-electric" />
               </div>
-              <div className="flex flex-col items-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
-                <Target className="w-6 h-6 text-electric mb-1" />
-                <span className="text-xs text-white/80 font-medium">Strategy</span>
+              <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
+                <Target className="w-6 h-6 text-electric" />
               </div>
-              <div className="flex flex-col items-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
-                <Handshake className="w-6 h-6 text-electric mb-1" />
-                <span className="text-xs text-white/80 font-medium">Partnerships</span>
+              <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
+                <Handshake className="w-6 h-6 text-electric" />
               </div>
-              <div className="flex flex-col items-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
-                <TrendingUp className="w-6 h-6 text-electric mb-1" />
-                <span className="text-xs text-white/80 font-medium">Investment</span>
+              <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
+                <DollarSign className="w-6 h-6 text-electric" />
               </div>
             </div>
           </div>
