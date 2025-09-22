@@ -5,10 +5,8 @@ import vc4aLogo from "@/assets/vc4a-logo.png";
 import adbLogo from "@/assets/adb-logo.png";
 import atsfLogo from "@/assets/atsf-logo.png";
 import plugandplayLogo from "@/assets/plugandplay-logo.png";
-
 const Hero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-navy to-navy-lighter">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-navy to-navy-lighter">
       
       {/* Floating Elements */}
       <div className="absolute top-20 left-10 w-2 h-2 bg-electric rounded-full animate-pulse opacity-60"></div>
@@ -41,9 +39,7 @@ const Hero = () => {
             <span className="block font-black">Outcome-Driven.</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-slate-light mb-12 max-w-3xl mx-auto leading-relaxed font-medium">
-            Boutique advisory supporting funds, startups, and corporates in venture and innovation across MENA and Europe.
-          </p>
+          <p className="text-xl md:text-2xl text-slate-light mb-12 max-w-3xl mx-auto leading-relaxed font-medium">Boutique advisory supporting funds, startups, and corporates in venture and innovation across the MENA region.</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button variant="signal" size="lg" className="group" asChild>
@@ -63,64 +59,22 @@ const Hero = () => {
             <p className="text-slate-light/80 text-sm mb-6">Previous projects</p>
             <div className="overflow-hidden">
               <div className="flex items-center gap-12 md:gap-16 animate-[scroll_20s_linear_infinite] w-fit">
-                <img 
-                  src={plugandplayLogo} 
-                  alt="Plug and Play" 
-                  className="h-6 md:h-7 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0"
-                />
-                <img 
-                  src={sternLogo} 
-                  alt="NYU Stern" 
-                  className="h-10 md:h-12 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0"
-                />
-                <img 
-                  src={adbLogo} 
-                  alt="African Development Bank" 
-                  className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0"
-                />
-                <img 
-                  src={vc4aLogo} 
-                  alt="VC4A" 
-                  className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0"
-                />
-                <img 
-                  src={atsfLogo} 
-                  alt="Africa Tech Startup Forum" 
-                  className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0"
-                />
+                <img src={plugandplayLogo} alt="Plug and Play" className="h-6 md:h-7 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
+                <img src={sternLogo} alt="NYU Stern" className="h-10 md:h-12 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
+                <img src={adbLogo} alt="African Development Bank" className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
+                <img src={vc4aLogo} alt="VC4A" className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
+                <img src={atsfLogo} alt="Africa Tech Startup Forum" className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
                 {/* Duplicate logos for seamless loop */}
-                <img 
-                  src={plugandplayLogo} 
-                  alt="Plug and Play" 
-                  className="h-6 md:h-7 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0"
-                />
-                <img 
-                  src={sternLogo} 
-                  alt="NYU Stern" 
-                  className="h-10 md:h-12 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0"
-                />
-                <img 
-                  src={adbLogo} 
-                  alt="African Development Bank" 
-                  className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0"
-                />
-                <img 
-                  src={vc4aLogo} 
-                  alt="VC4A" 
-                  className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0"
-                />
-                <img 
-                  src={atsfLogo} 
-                  alt="Africa Tech Startup Forum" 
-                  className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0"
-                />
+                <img src={plugandplayLogo} alt="Plug and Play" className="h-6 md:h-7 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
+                <img src={sternLogo} alt="NYU Stern" className="h-10 md:h-12 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
+                <img src={adbLogo} alt="African Development Bank" className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
+                <img src={vc4aLogo} alt="VC4A" className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
+                <img src={atsfLogo} alt="Africa Tech Startup Forum" className="h-8 md:h-10 filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
