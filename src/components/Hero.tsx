@@ -53,8 +53,8 @@ const Hero = () => {
               </a>
             </Button>
             
-            <Button variant="outline-light" size="lg">
-              Learn More
+            <Button variant="outline-light" size="lg" asChild>
+              <a href="#about">Learn More</a>
             </Button>
           </div>
           
