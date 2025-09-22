@@ -33,7 +33,7 @@ const Footer = () => {
           
           {/* Bottom Bar */}
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-muted-foreground">
-            <p className="mb-4 md:mb-0">© Signal Works, 2025</p>
+            <p className="mb-4 md:mb-0">© SignalWorks, 2025</p>
             <p className="text-center md:text-right max-w-md">Boutique advisory supporting funds, startups, and corporates across the MENA region.</p>
           </div>
         </div>
