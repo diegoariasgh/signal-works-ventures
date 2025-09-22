@@ -1,5 +1,5 @@
 import { Users, Globe, TrendingUp } from "lucide-react";
-import founderIllustration from "@/assets/founder-illustration.jpeg";
+import founderProfile from "@/assets/founder-profile.png";
 const About = () => {
   return <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
@@ -47,8 +47,8 @@ const About = () => {
               <div className="flex items-center gap-6">
                 <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
                   <img 
-                    src={founderIllustration} 
-                    alt="Diego Arias García - Founder illustration" 
+                    src={founderProfile} 
+                    alt="Diego Arias García - Founder profile" 
                     className="w-full h-full object-cover"
                   />
                 </div>
