@@ -59,7 +59,7 @@ const Hero = () => {
           </div>
           
           {/* Previous Projects */}
-          <div className="mt-20 pt-8 pb-20 border-t border-white/10">
+          <div className="mt-28 md:mt-36 pt-8 border-t border-white/10 mb-28 md:mb-36">
             <p className="text-slate-light/80 text-sm mb-6">Previous projects</p>
             <div className="overflow-hidden">
               <div className="flex items-center gap-12 md:gap-16 animate-[scroll_20s_linear_infinite] w-fit">
