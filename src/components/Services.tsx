@@ -65,8 +65,16 @@ const Services = () => {
                       </li>)}
                   </ul>
                   
-                  {/* CTA */}
-                  
+                   {/* CTA */}
+                   <Button 
+                     variant="outline" 
+                     className="w-full hover:bg-electric/10 hover:border-electric/50"
+                     asChild
+                   >
+                     <a href={`/case-studies/${service.title.toLowerCase().replace(/\s+/g, '-').replace('&', 'and')}`}>
+                       View Case Studies
+                     </a>
+                   </Button>
                 </CardContent>
               </Card>;
         })}
