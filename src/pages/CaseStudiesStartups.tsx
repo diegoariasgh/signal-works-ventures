@@ -7,20 +7,20 @@ import Footer from "@/components/Footer";
 const CaseStudiesStartups = () => {
   const caseStudies = [
     {
-      title: "Series A Fundraising",
-      client: "African Fintech Startup",
-      challenge: "Raise Series A funding to expand across East Africa",
-      solution: "Developed investor materials, pitch strategy, and led fundraising process",
-      results: ["$8M Series A raised", "Led by Tier 1 VC", "Expanded to 3 new markets"],
-      category: "Fundraising"
+      title: "Market Entry Exploration",
+      client: "US-based biotech startup",
+      challenge: "Limited visibility into KSA biotech ecosystem with need for demand validation and funding pathways.",
+      solution: "Mapped stakeholders, institutions, and regulators. Identified funding sources from public programs and private investors. Drafted KSA entry assessment with go/no-go recommendation.",
+      results: ["Clear partner and funding landscape delivered", "Early conversations with potential local partners initiated", "Actionable roadmap for future expansion created"],
+      category: "Market Expansion Strategy"
     },
     {
-      title: "Regional Expansion",
-      client: "SaaS Platform",
-      challenge: "Scale operations from Nigeria to 5 African markets",
-      solution: "Market analysis, partnership strategy, and operational scaling plan",
-      results: ["Launched in 5 markets", "300% revenue growth", "Strategic partnerships"],
-      category: "Growth Strategy"
+      title: "Fundraising Preparation",
+      client: "Early-stage VC-backed tech company",
+      challenge: "Needed compelling investor materials for a $4M seed round with growth story not yet positioned for investors.",
+      solution: "Refined narrative highlighting user growth and adoption. Created investor-facing deck and financial materials. Positioned company as a category-defining platform.",
+      results: ["$4M seed round successfully closed", "Investor materials showcased traction and monetization potential", "Strengthened credibility with global investors"],
+      category: "Seed Round Support"
     }
   ];
 

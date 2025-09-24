@@ -7,20 +7,20 @@ import Footer from "@/components/Footer";
 const CaseStudiesCorporates = () => {
   const caseStudies = [
     {
-      title: "Innovation Lab Setup",
-      client: "Fortune 500 Technology Company",
-      challenge: "Establish corporate innovation program to identify emerging technologies",
-      solution: "Designed accelerator program with startup partnership framework",
-      results: ["Launched 3-month accelerator", "Partnered with 20+ startups", "Generated 5 pilot programs"],
-      category: "Innovation Program"
+      title: "Startup Offering Refinement",
+      client: "Global technology services company",
+      challenge: "Messaging unclear to startups and investors with no structured GTM approach with accelerators and VC funds.",
+      solution: "Conducted product suite audit and gap analysis. Refined positioning and updated sales/marketing collateral. Designed GTM and partnership framework for ecosystem partners.",
+      results: ["Clear, competitive startup offering defined", "Consistent and aligned collateral for investors and accelerators", "GTM roadmap in place to embed into programs"],
+      category: "Go-to-market & Positioning"
     },
     {
-      title: "Market Entry Strategy",
-      client: "European Manufacturing Corp",
-      challenge: "Enter African markets through strategic partnerships",
-      solution: "Identified key partners and developed go-to-market strategy",
-      results: ["3 strategic partnerships", "Market entry in 2 countries", "€10M revenue pipeline"],
-      category: "Market Expansion"
+      title: "Corporate Innovation in Fintech",
+      client: "Leading government and financial institutions",
+      challenge: "Corporates lacked structured ways to engage fintech startups and needed mechanisms for piloting and partnerships.",
+      solution: "Designed and delivered multi-stakeholder programs. Curated startup cohorts and organized dealflow sessions. Structured pilots and facilitated co-investment discussions.",
+      results: ["Pilots launched with fintech startups", "Corporates engaged systematically with innovation", "New co-investment opportunities and expanded fintech access"],
+      category: "Program Design & Delivery"
     }
   ];
 

@@ -7,20 +7,20 @@ import Footer from "@/components/Footer";
 const CaseStudiesFunds = () => {
   const caseStudies = [
     {
-      title: "European VC Fund Launch",
-      client: "Confidential European VC",
-      challenge: "Launch of €50M early-stage fund focused on B2B software",
-      solution: "Complete fund setup, LP strategy, and operational framework",
-      results: ["Successfully raised €50M", "Secured 15 institutional LPs", "Completed first close in 8 months"],
-      category: "Fund Setup"
+      title: "Fund Launch & Setup",
+      client: "$30M early-stage VC fund",
+      challenge: "Needed to incorporate a new fund under tight timelines with limited experience with Delaware structures and providers.",
+      solution: "Coordinated legal incorporation in Delaware for fund and management company. Prepared Limited Partnership Agreement and governance documents. Benchmarked fund admin platforms and negotiated service fees.",
+      results: ["Entities incorporated successfully", "Legal documentation aligned with industry standards", "Infrastructure ready for fundraising launch"],
+      category: "Fund Launch & Setup"
     },
     {
-      title: "Secondary Market Transaction",
-      client: "Growth Equity Fund",
-      challenge: "Portfolio restructuring and secondary market opportunities",
-      solution: "Structured secondary transaction and portfolio optimization",
-      results: ["€25M secondary transaction", "Portfolio IRR improvement", "Enhanced LP relations"],
-      category: "Portfolio Management"
+      title: "Regional Expansion & Investment Activity",
+      client: "International investor and accelerator",
+      challenge: "No established footprint in North Africa and needed to demonstrate early-stage investment activity to attract partners.",
+      solution: "Launched operations in new markets and signed institutional partnerships. Built sourcing engine across ecosystems and led due diligence on startups. Delivered founder support through accelerator programming.",
+      results: ["16+ investments deployed at pre-seed and seed", "Recognized as one of the most active investors in the region", "Established trusted reputation with public and private stakeholders"],
+      category: "Market Expansion & Portfolio Building"
     }
   ];
 
