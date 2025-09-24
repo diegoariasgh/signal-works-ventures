@@ -9,16 +9,16 @@ const CaseStudiesStartups = () => {
     {
       title: "Market Entry Exploration",
       client: "US-based biotech startup",
-      challenge: "Limited visibility into KSA biotech ecosystem with need for demand validation and funding pathways.",
-      solution: "Mapped stakeholders, institutions, and regulators. Identified funding sources from public programs and private investors. Drafted KSA entry assessment with go/no-go recommendation.",
+      challenges: ["Limited visibility into KSA biotech ecosystem", "Needed demand validation and funding pathways"],
+      solutions: ["Mapped stakeholders, institutions, and regulators", "Identified funding sources from public programs and private investors", "Drafted KSA entry assessment with go/no-go recommendation"],
       results: ["Clear partner and funding landscape delivered", "Early conversations with potential local partners initiated", "Actionable roadmap for future expansion created"],
       category: "Market Expansion Strategy"
     },
     {
       title: "Fundraising Preparation",
       client: "Early-stage VC-backed tech company",
-      challenge: "Needed compelling investor materials for a $4M seed round with growth story not yet positioned for investors.",
-      solution: "Refined narrative highlighting user growth and adoption. Created investor-facing deck and financial materials. Positioned company as a category-defining platform.",
+      challenges: ["Needed compelling investor materials for a $4M seed round", "Growth story not yet positioned for investors"],
+      solutions: ["Refined narrative highlighting user growth and adoption", "Created investor-facing deck and financial materials", "Positioned company as a category-defining platform"],
       results: ["$4M seed round successfully closed", "Investor materials showcased traction and monetization potential", "Strengthened credibility with global investors"],
       category: "Seed Round Support"
     }
@@ -84,9 +84,14 @@ const CaseStudiesStartups = () => {
                           <Target className="w-4 h-4 text-electric" />
                           Challenge
                         </h4>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                          {study.challenge}
-                        </p>
+                        <ul className="space-y-2">
+                          {study.challenges.map((challenge, challengeIndex) => (
+                            <li key={challengeIndex} className="flex items-start gap-2">
+                              <div className="w-1.5 h-1.5 bg-electric rounded-full mt-2 flex-shrink-0"></div>
+                              <span className="text-muted-foreground text-sm">{challenge}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                       
                       <div>
@@ -94,9 +99,14 @@ const CaseStudiesStartups = () => {
                           <Users className="w-4 h-4 text-electric" />
                           Solution
                         </h4>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                          {study.solution}
-                        </p>
+                        <ul className="space-y-2">
+                          {study.solutions.map((solution, solutionIndex) => (
+                            <li key={solutionIndex} className="flex items-start gap-2">
+                              <div className="w-1.5 h-1.5 bg-electric rounded-full mt-2 flex-shrink-0"></div>
+                              <span className="text-muted-foreground text-sm">{solution}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                       
                       <div>

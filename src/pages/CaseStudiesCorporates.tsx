@@ -9,16 +9,16 @@ const CaseStudiesCorporates = () => {
     {
       title: "Startup Offering Refinement",
       client: "Global technology services company",
-      challenge: "Messaging unclear to startups and investors with no structured GTM approach with accelerators and VC funds.",
-      solution: "Conducted product suite audit and gap analysis. Refined positioning and updated sales/marketing collateral. Designed GTM and partnership framework for ecosystem partners.",
+      challenges: ["Messaging unclear to startups and investors", "No structured GTM approach with accelerators and VC funds"],
+      solutions: ["Conducted product suite audit and gap analysis", "Refined positioning and updated sales/marketing collateral", "Designed GTM and partnership framework for ecosystem partners"],
       results: ["Clear, competitive startup offering defined", "Consistent and aligned collateral for investors and accelerators", "GTM roadmap in place to embed into programs"],
       category: "Go-to-market & Positioning"
     },
     {
       title: "Corporate Innovation in Fintech",
       client: "Leading government and financial institutions",
-      challenge: "Corporates lacked structured ways to engage fintech startups and needed mechanisms for piloting and partnerships.",
-      solution: "Designed and delivered multi-stakeholder programs. Curated startup cohorts and organized dealflow sessions. Structured pilots and facilitated co-investment discussions.",
+      challenges: ["Corporates lacked structured ways to engage fintech startups", "Needed mechanisms for piloting and partnerships"],
+      solutions: ["Designed and delivered multi-stakeholder programs", "Curated startup cohorts and organized dealflow sessions", "Structured pilots and facilitated co-investment discussions"],
       results: ["Pilots launched with fintech startups", "Corporates engaged systematically with innovation", "New co-investment opportunities and expanded fintech access"],
       category: "Program Design & Delivery"
     }
@@ -84,9 +84,14 @@ const CaseStudiesCorporates = () => {
                           <Target className="w-4 h-4 text-electric" />
                           Challenge
                         </h4>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                          {study.challenge}
-                        </p>
+                        <ul className="space-y-2">
+                          {study.challenges.map((challenge, challengeIndex) => (
+                            <li key={challengeIndex} className="flex items-start gap-2">
+                              <div className="w-1.5 h-1.5 bg-electric rounded-full mt-2 flex-shrink-0"></div>
+                              <span className="text-muted-foreground text-sm">{challenge}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                       
                       <div>
@@ -94,9 +99,14 @@ const CaseStudiesCorporates = () => {
                           <Users className="w-4 h-4 text-electric" />
                           Solution
                         </h4>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                          {study.solution}
-                        </p>
+                        <ul className="space-y-2">
+                          {study.solutions.map((solution, solutionIndex) => (
+                            <li key={solutionIndex} className="flex items-start gap-2">
+                              <div className="w-1.5 h-1.5 bg-electric rounded-full mt-2 flex-shrink-0"></div>
+                              <span className="text-muted-foreground text-sm">{solution}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                       
                       <div>

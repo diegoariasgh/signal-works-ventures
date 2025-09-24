@@ -9,16 +9,16 @@ const CaseStudiesFunds = () => {
     {
       title: "Fund Launch & Setup",
       client: "$30M early-stage VC fund",
-      challenge: "Needed to incorporate a new fund under tight timelines with limited experience with Delaware structures and providers.",
-      solution: "Coordinated legal incorporation in Delaware for fund and management company. Prepared Limited Partnership Agreement and governance documents. Benchmarked fund admin platforms and negotiated service fees.",
+      challenges: ["Needed to incorporate a new fund under tight timelines", "Limited experience with Delaware structures and providers"],
+      solutions: ["Coordinated legal incorporation in Delaware for fund and management company", "Prepared Limited Partnership Agreement and governance documents", "Benchmarked fund admin platforms and negotiated service fees"],
       results: ["Entities incorporated successfully", "Legal documentation aligned with industry standards", "Infrastructure ready for fundraising launch"],
       category: "Fund Launch & Setup"
     },
     {
       title: "Regional Expansion & Investment Activity",
       client: "International investor and accelerator",
-      challenge: "No established footprint in North Africa and needed to demonstrate early-stage investment activity to attract partners.",
-      solution: "Launched operations in new markets and signed institutional partnerships. Built sourcing engine across ecosystems and led due diligence on startups. Delivered founder support through accelerator programming.",
+      challenges: ["No established footprint in North Africa", "Needed to demonstrate early-stage investment activity to attract partners"],
+      solutions: ["Launched operations in new markets and signed institutional partnerships", "Built sourcing engine across ecosystems and led due diligence on startups", "Delivered founder support through accelerator programming"],
       results: ["16+ investments deployed at pre-seed and seed", "Recognized as one of the most active investors in the region", "Established trusted reputation with public and private stakeholders"],
       category: "Market Expansion & Portfolio Building"
     }
@@ -84,9 +84,14 @@ const CaseStudiesFunds = () => {
                           <Target className="w-4 h-4 text-electric" />
                           Challenge
                         </h4>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                          {study.challenge}
-                        </p>
+                        <ul className="space-y-2">
+                          {study.challenges.map((challenge, challengeIndex) => (
+                            <li key={challengeIndex} className="flex items-start gap-2">
+                              <div className="w-1.5 h-1.5 bg-electric rounded-full mt-2 flex-shrink-0"></div>
+                              <span className="text-muted-foreground text-sm">{challenge}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                       
                       <div>
@@ -94,9 +99,14 @@ const CaseStudiesFunds = () => {
                           <Users className="w-4 h-4 text-electric" />
                           Solution
                         </h4>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                          {study.solution}
-                        </p>
+                        <ul className="space-y-2">
+                          {study.solutions.map((solution, solutionIndex) => (
+                            <li key={solutionIndex} className="flex items-start gap-2">
+                              <div className="w-1.5 h-1.5 bg-electric rounded-full mt-2 flex-shrink-0"></div>
+                              <span className="text-muted-foreground text-sm">{solution}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                       
                       <div>
