@@ -41,22 +41,22 @@ const Testimonials = () => {
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-card/50 backdrop-blur-sm border hover:border-electric/20 signal-transition hover-scale">
-              <CardContent className="p-8">
+            <Card key={index} className="bg-card/50 backdrop-blur-sm border hover:border-electric/20 signal-transition hover-scale h-full">
+              <CardContent className="p-8 h-full flex flex-col">
                 <div className="flex items-center gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-electric text-electric" />
                   ))}
                 </div>
                 
-                <div className="relative mb-6">
+                <div className="relative mb-6 flex-grow">
                   <Quote className="w-8 h-8 text-electric/20 absolute -top-2 -left-2" />
                   <p className="text-muted-foreground leading-relaxed pl-6">
                     "{testimonial.content}"
                   </p>
                 </div>
                 
-                <div className="border-t border-border pt-4">
+                <div className="border-t border-border pt-4 mt-auto">
                   <h4 className="font-semibold text-foreground">{testimonial.name}</h4>
                   <p className="text-sm text-electric font-medium">{testimonial.role}</p>
                   <p className="text-sm text-muted-foreground">{testimonial.company}</p>
