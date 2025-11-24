@@ -30,7 +30,7 @@ const CaseStudiesFunds = () => {
       client: "International investor and accelerator",
       challenges: ["No established footprint in North Africa", "Needed to demonstrate early-stage investment activity to attract partners"],
       solutions: ["Launched operations in new markets and signed institutional partnerships", "Built sourcing engine across ecosystems and led due diligence on startups", "Delivered founder support through accelerator programming"],
-      results: ["16+ investments deployed at pre-seed and seed", "Recognized as one of the most active investors in the region", "Established trusted reputation with public and private stakeholders"],
+      results: ["18+ investments deployed at pre-seed and seed", "Recognized as one of the most active investors in the region", "Established trusted reputation with public and private stakeholders"],
       category: "Market Expansion & Portfolio Building"
     }
   ];
