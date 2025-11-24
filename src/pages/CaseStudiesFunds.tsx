@@ -7,12 +7,23 @@ import Footer from "@/components/Footer";
 const CaseStudiesFunds = () => {
   const caseStudies = [
     {
-      title: "Fund Launch & Setup",
+      title: "Fund II Launch & Investment",
       client: "$30M early-stage VC fund",
-      challenges: ["Needed to incorporate a new fund under tight timelines", "Limited experience with Delaware structures and providers"],
-      solutions: ["Coordinated legal incorporation in Delaware for fund and management company", "Prepared Limited Partnership Agreement and governance documents", "Benchmarked fund admin platforms and negotiated service fees"],
-      results: ["Entities incorporated successfully", "Legal documentation aligned with industry standards", "Infrastructure ready for fundraising launch"],
-      category: "Fund Launch & Setup"
+      challenges: [
+        "Required structured investment processes across sourcing, diligence, and IC preparation",
+        "Needed to strengthen LP engagement, reporting, and compliance as the fund expanded its activities"
+      ],
+      solutions: [
+        "Led end-to-end execution for early-stage investments across fintech, B2B SaaS, and energy",
+        "Built portfolio monitoring tools for runway, deployment pacing, and liquidity planning",
+        "Developed impact and governance reporting framework for institutional LPs"
+      ],
+      results: [
+        "Completed multiple inaugural Fund II investments and strengthened the investment process",
+        "Improved LP communication through structured reports and data-driven portfolio insights",
+        "Used low-code tools to build an AI-native system to streamline dealflow management, automate reporting, and prioritize outreach, resulting in faster turnaround on evaluations and increased pipeline conversion"
+      ],
+      category: "Fund Launch & Investment"
     },
     {
       title: "Regional Expansion & Investment Activity",
