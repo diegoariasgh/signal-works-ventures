@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import signalWorksLogo from "@/assets/signalworks-logo.png";
+import signalWorksLogo from "@/assets/signalworks-logo-new.png";
 import { useActiveSection } from "@/hooks/use-active-section";
 
 const Header = () => {
