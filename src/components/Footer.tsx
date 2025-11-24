@@ -1,5 +1,5 @@
 import { Signal } from "lucide-react";
-import signalWorksLogo from "@/assets/signalworks-logo.png";
+import signalWorksLogo from "@/assets/signalworks-logo-new.png";
 const Footer = () => {
   return <footer className="bg-background border-t border-border py-12">
       <div className="container mx-auto px-6">
