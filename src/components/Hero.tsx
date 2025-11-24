@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Service Areas */}
-          <div className="flex justify-center mb-16">
+          <div className="flex justify-center mb-12">
             <div className="flex gap-3 p-4 bg-electric/10 rounded-2xl backdrop-blur-sm">
               <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
                 <MessageSquare className="w-6 h-6 text-electric" />
@@ -34,14 +34,14 @@ const Hero = () => {
             </div>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold font-space-grotesk text-white mb-8 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold font-space-grotesk text-white mb-10 leading-tight">
             <span className="block text-electric font-black">Mission-Aligned.</span>
             <span className="block font-black">Outcome-Driven.</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-slate-light mb-14 max-w-3xl mx-auto leading-relaxed font-medium">Boutique advisory supporting funds, startups, and corporates in venture and innovation across the MENA region.</p>
+          <p className="text-xl md:text-2xl text-slate-light mb-12 max-w-3xl mx-auto leading-relaxed font-medium">Boutique advisory supporting funds, startups, and corporates in venture and innovation across the MENA region.</p>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-32">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-24">
             <Button variant="signal" size="lg" className="group" asChild>
               <a href="mailto:diego@signalworks.xyz">
                 Get in Touch
