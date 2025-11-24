@@ -28,16 +28,16 @@ const Hero = () => {
           {/* Service Areas */}
           <div className="flex justify-center mb-12">
             <div className="flex gap-3 p-4 bg-electric/20 rounded-2xl backdrop-blur-sm">
-              <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
+              <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 hover:shadow-[0_0_20px_rgba(0,242,254,0.6)] transition-all duration-300">
                 <MessageSquare className="w-6 h-6 text-electric" />
               </div>
-              <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
+              <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 hover:shadow-[0_0_20px_rgba(0,242,254,0.6)] transition-all duration-300">
                 <Target className="w-6 h-6 text-electric" />
               </div>
-              <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
+              <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 hover:shadow-[0_0_20px_rgba(0,242,254,0.6)] transition-all duration-300">
                 <Handshake className="w-6 h-6 text-electric" />
               </div>
-              <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 transition-all duration-300">
+              <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 hover:shadow-[0_0_20px_rgba(0,242,254,0.6)] transition-all duration-300">
                 <DollarSign className="w-6 h-6 text-electric" />
               </div>
             </div>
