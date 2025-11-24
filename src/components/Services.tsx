@@ -40,7 +40,7 @@ const Services = () => {
           {services.map((service, index) => {
           const IconComponent = service.icon;
           return <Card key={index} className="group hover:shadow-lg signal-transition bg-card/50 backdrop-blur-sm border hover:border-electric/20">
-                <CardContent className="p-8 py-[33px]">
+                <CardContent className="p-8 py-[33px] flex flex-col h-full">
                   {/* Icon */}
                   <div className="mb-6">
                     <div className="w-16 h-16 bg-electric/10 rounded-2xl flex items-center justify-center group-hover:signal-glow signal-transition">
@@ -68,7 +68,7 @@ const Services = () => {
                    {/* CTA */}
                    <Button 
                      variant="outline" 
-                     className="w-full hover:bg-electric/10 hover:border-electric/50"
+                     className="w-full hover:bg-electric/10 hover:border-electric/50 mt-auto"
                      asChild
                    >
                      <a href={`/case-studies/${service.title.toLowerCase().replace(/\s+/g, '-').replace('&', 'and')}`}>
