@@ -10,10 +10,9 @@ const Hero = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-      >
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url(${heroBackground})`
+    }}>
         <div className="absolute inset-0 bg-navy/40"></div>
       </div>
       
@@ -27,17 +26,17 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Service Areas */}
           <div className="flex justify-center mb-12">
-            <div className="flex gap-3 p-4 bg-electric/20 rounded-2xl backdrop-blur-sm">
-              <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 hover:shadow-[0_0_20px_rgba(0,242,254,0.6)] transition-all duration-300">
+            <div className="flex gap-3 p-4 rounded-2xl backdrop-blur-sm bg-gray-200">
+              <div className="flex items-center justify-center p-3 rounded-xl hover:shadow-[0_0_20px_rgba(0,242,254,0.6)] transition-all duration-300 bg-slate-50">
                 <MessageSquare className="w-6 h-6 text-electric" />
               </div>
-              <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 hover:shadow-[0_0_20px_rgba(0,242,254,0.6)] transition-all duration-300">
+              <div className="flex items-center justify-center p-3 rounded-xl hover:shadow-[0_0_20px_rgba(0,242,254,0.6)] transition-all duration-300 bg-slate-50">
                 <Target className="w-6 h-6 text-electric" />
               </div>
-              <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 hover:shadow-[0_0_20px_rgba(0,242,254,0.6)] transition-all duration-300">
+              <div className="flex items-center justify-center p-3 rounded-xl hover:shadow-[0_0_20px_rgba(0,242,254,0.6)] transition-all duration-300 bg-slate-50">
                 <Handshake className="w-6 h-6 text-electric" />
               </div>
-              <div className="flex items-center justify-center p-3 bg-white/5 rounded-xl hover:bg-white/10 hover:shadow-[0_0_20px_rgba(0,242,254,0.6)] transition-all duration-300">
+              <div className="flex items-center justify-center p-3 rounded-xl hover:shadow-[0_0_20px_rgba(0,242,254,0.6)] transition-all duration-300 bg-slate-50">
                 <DollarSign className="w-6 h-6 text-electric" />
               </div>
             </div>
