@@ -21,7 +21,7 @@ const Services = () => {
     features: ["Fundraising preparation and investor materials", "Go-to-market and partnership strategy", "Regional expansion and growth planning"],
     color: "text-electric"
   }];
-  return <section id="services" className="py-24 bg-slate-light/30">
+  return <section id="services" className="min-h-screen flex items-center py-24 bg-slate-light/30">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
