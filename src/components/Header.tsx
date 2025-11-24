@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import signalWorksLogo from "@/assets/signalworks-logo.png";
+import { useActiveSection } from "@/hooks/use-active-section";
 
 const Header = () => {
+  const activeSection = useActiveSection();
+  
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6 py-4">
@@ -15,16 +18,44 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex items-center justify-center space-x-8">
-            <a href="#about" className="text-muted-foreground hover:text-foreground signal-transition">
+            <a 
+              href="#about" 
+              className={`signal-transition ${
+                activeSection === 'about' 
+                  ? 'text-electric font-semibold' 
+                  : 'text-muted-foreground hover:text-foreground'
+              }`}
+            >
               About
             </a>
-            <a href="#services" className="text-muted-foreground hover:text-foreground signal-transition">
+            <a 
+              href="#services" 
+              className={`signal-transition ${
+                activeSection === 'services' 
+                  ? 'text-electric font-semibold' 
+                  : 'text-muted-foreground hover:text-foreground'
+              }`}
+            >
               Services
             </a>
-            <a href="#testimonials" className="text-muted-foreground hover:text-foreground signal-transition">
+            <a 
+              href="#testimonials" 
+              className={`signal-transition ${
+                activeSection === 'testimonials' 
+                  ? 'text-electric font-semibold' 
+                  : 'text-muted-foreground hover:text-foreground'
+              }`}
+            >
               Testimonials
             </a>
-            <a href="#contact" className="text-muted-foreground hover:text-foreground signal-transition">
+            <a 
+              href="#contact" 
+              className={`signal-transition ${
+                activeSection === 'contact' 
+                  ? 'text-electric font-semibold' 
+                  : 'text-muted-foreground hover:text-foreground'
+              }`}
+            >
               Contact
             </a>
           </nav>

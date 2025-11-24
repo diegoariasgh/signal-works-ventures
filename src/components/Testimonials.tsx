@@ -20,7 +20,7 @@ const Testimonials = () => {
     content: "The corporate innovation program they designed exceeded our expectations. We successfully launched 3 pilot projects with fintech startups within 6 months.",
     rating: 5
   }];
-  return <section id="testimonials" className="py-32 bg-slate-light/20">
+  return <section id="testimonials" className="min-h-screen flex items-center py-32 bg-slate-light/20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <div className="inline-flex items-center justify-center p-2 bg-electric/10 rounded-xl mb-6">
