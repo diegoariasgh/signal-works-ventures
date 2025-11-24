@@ -6,7 +6,7 @@ import adbLogo from "@/assets/adb-logo.png";
 import atsfLogo from "@/assets/atsf-logo.png";
 import plugandplayLogo from "@/assets/plugandplay-logo.png";
 const Hero = () => {
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-navy to-navy-lighter">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-navy to-navy-lighter pt-20">
       
       {/* Floating Elements */}
       <div className="absolute top-20 left-10 w-2 h-2 bg-electric rounded-full animate-pulse opacity-60"></div>
