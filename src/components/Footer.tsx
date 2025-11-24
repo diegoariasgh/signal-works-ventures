@@ -22,7 +22,7 @@ const Footer = () => {
                 signalworks.xyz
               </a>
               <span className="hidden sm:block text-muted-foreground/40">•</span>
-              <a href="#" className="text-muted-foreground hover:text-electric signal-transition font-medium">
+              <a href="https://www.linkedin.com/company/signalworksxyz/" className="text-muted-foreground hover:text-electric signal-transition font-medium">
                 LinkedIn
               </a>
             </div>
