@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, MessageSquare } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [{
     name: "Sarah Chen",
@@ -23,11 +23,14 @@ const Testimonials = () => {
   return <section id="testimonials" className="py-32 bg-slate-light/20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
+          <div className="inline-flex items-center justify-center p-2 bg-electric/10 rounded-xl mb-6">
+            <MessageSquare className="w-6 h-6 text-electric" />
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold font-space-grotesk text-foreground mb-6">Testimonials</h2>
+          <div className="w-24 h-1 signal-gradient mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Trusted by founders, investors, and corporate leaders across the innovation ecosystem
           </p>
-          <div className="w-24 h-1 signal-gradient rounded-full mx-auto mt-8"></div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
