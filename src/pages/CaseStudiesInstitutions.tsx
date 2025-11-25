@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const CaseStudiesCorporates = () => {
+const CaseStudiesInstitutions = () => {
   const caseStudies = [
     {
       title: "Startup Offering Refinement",
@@ -45,7 +45,7 @@ const CaseStudiesCorporates = () => {
               </div>
               <div>
                 <h1 className="text-4xl md:text-5xl font-bold font-space-grotesk text-foreground">
-                  Corporates & Accelerators
+                  Institutions & Accelerators
                 </h1>
                 <p className="text-xl text-muted-foreground mt-2">
                   Case Studies & Success Stories
@@ -137,4 +137,4 @@ const CaseStudiesCorporates = () => {
   );
 };
 
-export default CaseStudiesCorporates;
+export default CaseStudiesInstitutions;
