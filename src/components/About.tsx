@@ -5,7 +5,6 @@ import plugandplayLogo from "@/assets/plugandplay-logo.png";
 import adbLogo from "@/assets/adb-logo.png";
 import atsfLogo from "@/assets/atsf-logo.png";
 import vc4aLogo from "@/assets/vc4a-logo.png";
-
 const About = () => {
   return <section id="about" className="min-h-screen flex items-center py-24 bg-background">
       <div className="container mx-auto px-6">
@@ -25,7 +24,7 @@ const About = () => {
             <div className="space-y-8">
               {/* Company Overview */}
               <div>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-6">Signal Works is a boutique advisory for funds, corporates, and startups in venture and innovation. With 7+ years across the GCC, North Africa, and Europe, we combine early-stage investing, fund operations, and GTM/partnership strategy to deliver clear, actionable plans.</p>
+                <p className="text-lg text-muted-foreground leading-relaxed mb-6">Signalworks is a boutique advisory for funds, corporates, and startups in venture and innovation. With 7+ years across the GCC, North Africa, and Europe, we combine early-stage investing, fund operations, and GTM/partnership strategy to deliver clear, actionable plans.</p>
                 
                 <p className="text-lg text-muted-foreground leading-relaxed">Our work spans fund setup and strategy, fundraising & LP engagement, portfolio structuring/secondaries, accelerator and partnership programs, and regional expansion for high-growth startups.</p>
               </div>
@@ -34,15 +33,11 @@ const About = () => {
               <div className="bg-card p-8 rounded-2xl shadow-sm border">
                 <div className="flex items-start gap-6 mb-6">
                   <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
-                    <img 
-                      src={founderProfile} 
-                      alt="Diego Arias García - Founder profile" 
-                      className="w-full h-full object-cover"
-                    />
+                    <img src={founderProfile} alt="Diego Arias García - Founder profile" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-semibold font-space-grotesk text-foreground mb-3">Led by Diego Arias García</h3>
-                    <p className="text-muted-foreground leading-relaxed">Background with global VC platforms and accelerators and boutique funds, operating across the GCC & North Africa. Built fund ops from the ground up, managed LP engagement, and supported VC-backed startups on fundraising and GTM.</p>
+                    <p className="text-muted-foreground leading-relaxed">Background with global VC platforms and accelerators and boutique funds, operating across the GCC & North Africa. Built fund ops from the ground up in new markets, managed LP engagement, and supported VC-backed startups on fundraising and GTM.</p>
                   </div>
                 </div>
               </div>
