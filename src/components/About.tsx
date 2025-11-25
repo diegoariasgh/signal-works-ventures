@@ -42,7 +42,7 @@ const About = () => {
           </div>
           
           {/* Founder Card - Full Width Below */}
-          <div className="mt-16">
+          <div className="mt-16 space-y-6">
             <div className="bg-card p-8 rounded-2xl shadow-sm border">
               <div className="flex items-center gap-6">
                 <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
@@ -56,6 +56,28 @@ const About = () => {
                   <h3 className="text-2xl font-semibold font-space-grotesk text-foreground mb-3">Led by Diego Arias García</h3>
                   <p className="text-muted-foreground leading-relaxed max-w-4xl">Background with global VC platforms and accelerators and boutique funds, operating across the GCC & North Africa. Built fund ops from the ground up, managed LP engagement, and supported VC-backed startups on fundraising and GTM.</p>
                 </div>
+              </div>
+            </div>
+
+            {/* Thought Leadership Section */}
+            <div className="bg-card p-8 rounded-2xl shadow-sm border">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 bg-electric/10 rounded-lg">
+                  <Users className="w-6 h-6 text-electric" />
+                </div>
+                <h3 className="text-xl font-semibold font-space-grotesk text-foreground">Speaker & Mentor</h3>
+              </div>
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                Featured speaker and mentor at leading institutions and accelerators, delivering workshops on fundraising strategy, investor relations, and international expansion across GCC, North Africa, and Europe.
+              </p>
+              
+              {/* Organization Logos */}
+              <div className="flex flex-wrap items-center gap-8 pt-6 border-t">
+                <img src="/src/assets/stern-logo.webp" alt="NYU Stern School of Business" className="h-10 object-contain opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/src/assets/plugandplay-logo.png" alt="Plug and Play Ventures" className="h-10 object-contain opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/src/assets/adb-logo.png" alt="African Development Bank" className="h-10 object-contain opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/src/assets/atsf-logo.png" alt="Africa Tech Startup Festival" className="h-10 object-contain opacity-70 hover:opacity-100 transition-opacity" />
+                <img src="/src/assets/vc4a-logo.png" alt="VC4A" className="h-10 object-contain opacity-70 hover:opacity-100 transition-opacity" />
               </div>
             </div>
           </div>
