@@ -7,12 +7,23 @@ import Footer from "@/components/Footer";
 const CaseStudiesInstitutions = () => {
   const caseStudies = [
     {
-      title: "Startup Offering Refinement",
-      client: "Global technology services company",
-      challenges: ["Messaging unclear to startups and investors", "No structured GTM approach with accelerators and VC funds"],
-      solutions: ["Conducted product suite audit and gap analysis", "Refined positioning and updated sales/marketing collateral", "Designed GTM and partnership framework for ecosystem partners"],
-      results: ["Clear, competitive startup offering defined", "Consistent and aligned collateral for investors and accelerators", "GTM roadmap in place to embed into programs"],
-      category: "Go-to-market & Positioning"
+      title: "Capacity Building & Mentorship Programs",
+      client: "International development organizations, accelerators, and universities",
+      challenges: [
+        "Entrepreneurs lacked structured guidance on storytelling, fundraising, and investor engagement",
+        "Programs needed curated experts to bridge founder capabilities with investor expectations"
+      ],
+      solutions: [
+        "Delivered workshops on VC fundamentals, storytelling, pitch development, and term-sheet negotiation",
+        "Designed curricula for accelerators and academic programs to strengthen investor readiness",
+        "Provided one-on-one mentoring to startups across MENA",
+        "Supported founder preparation for investment conversations through narrative, KPIs, and pitch refinement"
+      ],
+      results: [
+        "Improved investor-readiness and pitch quality for 100+ founders",
+        "Strong feedback and recurring invitations from NYU Stern, Plug and Play, OST, VC4A, and others"
+      ],
+      category: "Founder Readiness & Program Delivery"
     },
     {
       title: "Corporate Innovation in Fintech",
