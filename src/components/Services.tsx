@@ -10,7 +10,7 @@ const Services = () => {
     color: "text-electric"
   }, {
     icon: Building2,
-    title: "Corporates & Accelerators",
+    title: "Institutions & Accelerators",
     description: "Innovation programs and partnerships",
     features: ["Program and partnership design", "Startup scouting and evaluation", "Market entry and innovation strategy"],
     color: "text-electric"
