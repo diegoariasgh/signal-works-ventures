@@ -45,18 +45,6 @@ const About = () => {
                     <p className="text-muted-foreground leading-relaxed">Background with global VC platforms and accelerators and boutique funds, operating across the GCC & North Africa. Built fund ops from the ground up, managed LP engagement, and supported VC-backed startups on fundraising and GTM.</p>
                   </div>
                 </div>
-
-                {/* Speaking Logos */}
-                <div className="pt-6 border-t">
-                  <p className="text-sm text-muted-foreground mb-4 font-medium">Featured speaker & mentor at:</p>
-                  <div className="flex flex-wrap items-center gap-6">
-                    <img src={sternLogo} alt="NYU Stern" className="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity" />
-                    <img src={plugandplayLogo} alt="Plug and Play" className="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity" />
-                    <img src={adbLogo} alt="African Development Bank" className="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity" />
-                    <img src={atsfLogo} alt="Africa Tech Startup Festival" className="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity" />
-                    <img src={vc4aLogo} alt="VC4A" className="h-8 object-contain opacity-60 hover:opacity-100 transition-opacity" />
-                  </div>
-                </div>
               </div>
             </div>
             
