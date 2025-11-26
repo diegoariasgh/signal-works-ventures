@@ -33,7 +33,7 @@ const About = () => {
               <div className="bg-card p-8 rounded-2xl shadow-sm border">
                 <div className="flex items-start gap-6 mb-6">
                   <div className="w-20 h-20 rounded-full overflow-hidden flex-shrink-0">
-                    <img src={founderProfile} alt="Diego Arias García - Founder profile" className="w-full h-full object-cover" />
+                    <img src={founderProfile} alt="Diego Arias García - Founder and Managing Director" width="80" height="80" loading="lazy" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-semibold font-space-grotesk text-foreground mb-3">Led by Diego Arias García</h3>
