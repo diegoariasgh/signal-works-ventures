@@ -20,7 +20,9 @@ const Header = () => {
           <div className="flex items-center space-x-2">
             <img 
               src={signalWorksLogo} 
-              alt="Signal Works Logo" 
+              alt="Signal Works - Boutique Advisory for Venture & Innovation" 
+              width="160"
+              height="32"
               className="h-8 w-auto"
             />
           </div>

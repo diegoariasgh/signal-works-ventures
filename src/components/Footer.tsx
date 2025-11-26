@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             {/* Logo & Brand */}
             <div className="flex items-center space-x-3 mb-6 md:mb-0">
-              <img src={signalWorksLogo} alt="Signal Works Logo" className="h-10 w-auto" />
+              <img src={signalWorksLogo} alt="Signal Works - Boutique Advisory" width="200" height="40" loading="lazy" className="h-10 w-auto" />
               <div>
                 
               </div>
