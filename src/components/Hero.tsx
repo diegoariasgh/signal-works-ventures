@@ -3,7 +3,7 @@ import { ArrowRight, MessageSquare, Target, Handshake, DollarSign } from "lucide
 import sternLogo from "@/assets/stern-logo.webp";
 import vc4aLogo from "@/assets/vc4a-logo.png";
 import adbLogo from "@/assets/adb-logo.png";
-import atsfLogo from "@/assets/atsf-logo.png";
+import atsfLogo from "@/assets/atsf-logo-new.png";
 import plugandplayLogo from "@/assets/plugandplay-logo.png";
 import heroBackground from "@/assets/hero-gradient-bg.png";
 const Hero = () => {
