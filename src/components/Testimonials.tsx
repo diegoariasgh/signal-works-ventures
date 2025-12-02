@@ -2,10 +2,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Star, Quote, MessageSquare } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [{
-    name: "Sarah Chen",
+    name: "Yaya Mbaoua",
     role: "Founder & CEO",
-    company: "TechVenture Labs",
-    content: "The strategic guidance provided was instrumental in securing our Series A. The team's deep understanding of the venture ecosystem and their network of connections made all the difference.",
+    company: "Zencey",
+    content: "Diego's support has been instrumental in advancing our fundraising strategy. His proactive approach, from facilitating high-value investor introductions to providing diligent follow-ups, ensured we maintained strong momentum throughout the process. His meticulous attention to detail and creative negotiation insights consistently elevated the quality of our discussions and outcomes.",
     rating: 5
   }, {
     name: "Michael Rodriguez",
