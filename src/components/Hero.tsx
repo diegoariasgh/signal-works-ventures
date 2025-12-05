@@ -5,6 +5,8 @@ import vc4aLogo from "@/assets/vc4a-logo.png";
 import adbLogo from "@/assets/adb-logo.png";
 import atsfLogo from "@/assets/atsf-logo.png";
 import plugandplayLogo from "@/assets/plugandplay-logo.png";
+import mantaLogo from "@/assets/manta-logo.png";
+import ivbLogo from "@/assets/ivb-logo.png";
 import heroBackground from "@/assets/hero-gradient-bg.png";
 const Hero = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
@@ -72,12 +74,16 @@ const Hero = () => {
                 <img src={adbLogo} alt="African Development Bank - Signal Works Partner" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
                 <img src={vc4aLogo} alt="VC4A Venture Capital Platform - Signal Works Partner" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
                 <img src={atsfLogo} alt="Africa Tech Startup Forum - Signal Works Partner" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
+                <img src={mantaLogo} alt="Manta Ray Ventures - Signal Works Partner" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
+                <img src={ivbLogo} alt="IVB - Signal Works Partner" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
                 {/* Duplicate logos for seamless loop */}
                 <img src={plugandplayLogo} alt="Plug and Play Tech Center" width="120" height="28" loading="lazy" className="h-6 md:h-7 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
                 <img src={sternLogo} alt="NYU Stern School of Business" width="180" height="48" loading="lazy" className="h-10 md:h-12 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
                 <img src={adbLogo} alt="African Development Bank" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
                 <img src={vc4aLogo} alt="VC4A Venture Capital Platform" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
                 <img src={atsfLogo} alt="Africa Tech Startup Forum" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
+                <img src={mantaLogo} alt="Manta Ray Ventures" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
+                <img src={ivbLogo} alt="IVB" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
               </div>
             </div>
           </div>
