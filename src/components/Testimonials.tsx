@@ -8,10 +8,10 @@ const Testimonials = () => {
     content: "Diego's support has been instrumental in advancing our fundraising strategy. His proactive approach, from facilitating high-value investor introductions to providing diligent follow-ups, ensured we maintained strong momentum throughout the process. His meticulous attention to detail and creative negotiation insights consistently elevated the quality of our discussions and outcomes.",
     rating: 5
   }, {
-    name: "Michael Rodriguez",
-    role: "Managing Partner",
-    company: "Growth Capital Partners",
-    content: "Outstanding support in structuring our fund operations. The attention to detail and industry expertise helped us navigate complex regulatory requirements with confidence.",
+    name: "Hania Tarek",
+    role: "Senior Program & Operations Manager",
+    company: "Plug and Play Tech Center",
+    content: "Diego is one of the best people I know to ever give feedback to our founders; constructive and insightful. He also has an eye for detail that is unmatched. We've received the best feedback from startups about his level of knowledge in various sectors and regions, his ability to bring in an investor's perspective while also connecting founders to the right people.",
     rating: 5
   }, {
     name: "Dr. Amira Hassan",
