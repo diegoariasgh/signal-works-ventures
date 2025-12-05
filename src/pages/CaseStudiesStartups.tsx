@@ -7,12 +7,13 @@ import Footer from "@/components/Footer";
 const CaseStudiesStartups = () => {
   const caseStudies = [
     {
-      title: "Market Entry Exploration",
-      client: "US-based biotech startup",
-      challenges: ["Limited visibility into KSA biotech ecosystem", "Needed demand validation and funding pathways"],
-      solutions: ["Mapped stakeholders, institutions, and regulators", "Identified funding sources from public programs and private investors", "Drafted KSA entry assessment with go/no-go recommendation"],
-      results: ["Clear partner and funding landscape delivered", "Early conversations with potential local partners initiated", "Actionable roadmap for future expansion created"],
-      category: "Market Expansion Strategy"
+      title: "Case Study Coming Soon",
+      client: "",
+      challenges: [],
+      solutions: [],
+      results: [],
+      category: "",
+      isPlaceholder: true
     },
     {
       title: "Fundraising Preparation",
@@ -62,69 +63,77 @@ const CaseStudiesStartups = () => {
           <div className="container mx-auto px-6">
             <div className="grid gap-8 max-w-4xl mx-auto">
               {caseStudies.map((study, index) => (
-                <Card key={index} className="bg-card/50 backdrop-blur-sm border hover:border-electric/20 signal-transition">
-                  <CardHeader>
-                    <div className="flex items-start justify-between">
-                      <div>
-                        <CardTitle className="text-2xl font-space-grotesk text-foreground mb-2">
-                          {study.title}
-                        </CardTitle>
-                        <p className="text-electric font-medium">{study.client}</p>
-                        <span className="inline-block bg-electric/10 text-electric px-3 py-1 rounded-full text-sm mt-3">
-                          {study.category}
-                        </span>
-                      </div>
-                    </div>
-                  </CardHeader>
-                  
-                  <CardContent className="pt-0">
-                    <div className="grid md:grid-cols-3 gap-6">
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                          <Target className="w-4 h-4 text-electric" />
-                          Challenge
-                        </h4>
-                        <ul className="space-y-2">
-                          {study.challenges.map((challenge, challengeIndex) => (
-                            <li key={challengeIndex} className="flex items-start gap-2">
-                              <div className="w-1.5 h-1.5 bg-electric rounded-full mt-2 flex-shrink-0"></div>
-                              <span className="text-muted-foreground text-sm">{challenge}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                <Card key={index} className={`bg-card/50 backdrop-blur-sm border hover:border-electric/20 signal-transition ${study.isPlaceholder ? 'flex items-center justify-center min-h-[200px]' : ''}`}>
+                  {study.isPlaceholder ? (
+                    <CardContent className="py-12 text-center">
+                      <p className="text-muted-foreground/60 text-xl italic">Case study coming soon...</p>
+                    </CardContent>
+                  ) : (
+                    <>
+                      <CardHeader>
+                        <div className="flex items-start justify-between">
+                          <div>
+                            <CardTitle className="text-2xl font-space-grotesk text-foreground mb-2">
+                              {study.title}
+                            </CardTitle>
+                            <p className="text-electric font-medium">{study.client}</p>
+                            <span className="inline-block bg-electric/10 text-electric px-3 py-1 rounded-full text-sm mt-3">
+                              {study.category}
+                            </span>
+                          </div>
+                        </div>
+                      </CardHeader>
                       
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                          <Users className="w-4 h-4 text-electric" />
-                          Solution
-                        </h4>
-                        <ul className="space-y-2">
-                          {study.solutions.map((solution, solutionIndex) => (
-                            <li key={solutionIndex} className="flex items-start gap-2">
-                              <div className="w-1.5 h-1.5 bg-electric rounded-full mt-2 flex-shrink-0"></div>
-                              <span className="text-muted-foreground text-sm">{solution}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                      
-                      <div>
-                        <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
-                          <CheckCircle className="w-4 h-4 text-electric" />
-                          Results
-                        </h4>
-                        <ul className="space-y-2">
-                          {study.results.map((result, resultIndex) => (
-                            <li key={resultIndex} className="flex items-start gap-2">
-                              <div className="w-1.5 h-1.5 bg-electric rounded-full mt-2 flex-shrink-0"></div>
-                              <span className="text-muted-foreground text-sm">{result}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </CardContent>
+                      <CardContent className="pt-0">
+                        <div className="grid md:grid-cols-3 gap-6">
+                          <div>
+                            <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                              <Target className="w-4 h-4 text-electric" />
+                              Challenge
+                            </h4>
+                            <ul className="space-y-2">
+                              {study.challenges.map((challenge, challengeIndex) => (
+                                <li key={challengeIndex} className="flex items-start gap-2">
+                                  <div className="w-1.5 h-1.5 bg-electric rounded-full mt-2 flex-shrink-0"></div>
+                                  <span className="text-muted-foreground text-sm">{challenge}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                          
+                          <div>
+                            <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                              <Users className="w-4 h-4 text-electric" />
+                              Solution
+                            </h4>
+                            <ul className="space-y-2">
+                              {study.solutions.map((solution, solutionIndex) => (
+                                <li key={solutionIndex} className="flex items-start gap-2">
+                                  <div className="w-1.5 h-1.5 bg-electric rounded-full mt-2 flex-shrink-0"></div>
+                                  <span className="text-muted-foreground text-sm">{solution}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                          
+                          <div>
+                            <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                              <CheckCircle className="w-4 h-4 text-electric" />
+                              Results
+                            </h4>
+                            <ul className="space-y-2">
+                              {study.results.map((result, resultIndex) => (
+                                <li key={resultIndex} className="flex items-start gap-2">
+                                  <div className="w-1.5 h-1.5 bg-electric rounded-full mt-2 flex-shrink-0"></div>
+                                  <span className="text-muted-foreground text-sm">{result}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </>
+                  )}
                 </Card>
               ))}
             </div>
