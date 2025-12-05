@@ -3,30 +3,24 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
 const CaseStudiesStartups = () => {
-  const caseStudies = [
-    {
-      title: "Market Entry Exploration",
-      client: "US-based biotech",
-      challenges: [],
-      solutions: [],
-      results: [],
-      category: "Market Expansion Strategy",
-      isPlaceholder: true
-    },
-    {
-      title: "Fundraising Preparation",
-      client: "Early-stage VC-backed tech company",
-      challenges: ["Needed compelling investor materials for a $4M seed round", "Growth story not yet positioned for investors"],
-      solutions: ["Refined narrative highlighting user growth and adoption", "Created investor-facing deck and financial materials", "Positioned company as a category-defining platform"],
-      results: ["$4M seed round successfully closed", "Investor materials showcased traction and monetization potential", "Strengthened credibility with global investors"],
-      category: "Seed Round Support"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const caseStudies = [{
+    title: "Market Entry Exploration",
+    client: "US-based biotech",
+    challenges: [],
+    solutions: [],
+    results: [],
+    category: "Market Expansion Strategy",
+    isPlaceholder: true
+  }, {
+    title: "Fundraising Preparation",
+    client: "Early-stage VC-backed tech company",
+    challenges: ["Needed compelling investor materials for a $4M seed round", "Growth story not yet positioned for investors"],
+    solutions: ["Refined narrative highlighting user growth and adoption", "Created investor-facing deck and financial materials", "Positioned company as a category-defining platform"],
+    results: ["$4M seed round successfully closed", "Investor materials showcased traction and monetization potential", "Strengthened credibility with global investors"],
+    category: "Seed Round Support"
+  }];
+  return <div className="min-h-screen bg-background">
       <Header />
       
       <main className="pt-20">
@@ -62,8 +56,7 @@ const CaseStudiesStartups = () => {
         <section className="py-16">
           <div className="container mx-auto px-6">
             <div className="grid gap-8 max-w-4xl mx-auto">
-              {caseStudies.map((study, index) => (
-                <Card key={index} className="bg-card/50 backdrop-blur-sm border hover:border-electric/20 signal-transition">
+              {caseStudies.map((study, index) => <Card key={index} className="bg-card/50 backdrop-blur-sm border hover:border-electric/20 signal-transition">
                   <CardHeader>
                     <div className="flex items-start justify-between">
                       <div>
@@ -79,22 +72,17 @@ const CaseStudiesStartups = () => {
                   </CardHeader>
                   
                   <CardContent className="pt-0">
-                    {study.isPlaceholder ? (
-                      <p className="text-muted-foreground/60 text-lg italic py-4">Case study coming soon...</p>
-                    ) : (
-                      <div className="grid md:grid-cols-3 gap-6">
+                    {study.isPlaceholder ? <p className="text-muted-foreground/60 text-lg italic py-4 text-center">Case study coming soon</p> : <div className="grid md:grid-cols-3 gap-6">
                         <div>
                           <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
                             <Target className="w-4 h-4 text-electric" />
                             Challenge
                           </h4>
                           <ul className="space-y-2">
-                            {study.challenges.map((challenge, challengeIndex) => (
-                              <li key={challengeIndex} className="flex items-start gap-2">
+                            {study.challenges.map((challenge, challengeIndex) => <li key={challengeIndex} className="flex items-start gap-2">
                                 <div className="w-1.5 h-1.5 bg-electric rounded-full mt-2 flex-shrink-0"></div>
                                 <span className="text-muted-foreground text-sm">{challenge}</span>
-                              </li>
-                            ))}
+                              </li>)}
                           </ul>
                         </div>
                         
@@ -104,12 +92,10 @@ const CaseStudiesStartups = () => {
                             Solution
                           </h4>
                           <ul className="space-y-2">
-                            {study.solutions.map((solution, solutionIndex) => (
-                              <li key={solutionIndex} className="flex items-start gap-2">
+                            {study.solutions.map((solution, solutionIndex) => <li key={solutionIndex} className="flex items-start gap-2">
                                 <div className="w-1.5 h-1.5 bg-electric rounded-full mt-2 flex-shrink-0"></div>
                                 <span className="text-muted-foreground text-sm">{solution}</span>
-                              </li>
-                            ))}
+                              </li>)}
                           </ul>
                         </div>
                         
@@ -119,27 +105,21 @@ const CaseStudiesStartups = () => {
                             Results
                           </h4>
                           <ul className="space-y-2">
-                            {study.results.map((result, resultIndex) => (
-                              <li key={resultIndex} className="flex items-start gap-2">
+                            {study.results.map((result, resultIndex) => <li key={resultIndex} className="flex items-start gap-2">
                                 <div className="w-1.5 h-1.5 bg-electric rounded-full mt-2 flex-shrink-0"></div>
                                 <span className="text-muted-foreground text-sm">{result}</span>
-                              </li>
-                            ))}
+                              </li>)}
                           </ul>
                         </div>
-                      </div>
-                    )}
+                      </div>}
                   </CardContent>
-                </Card>
-              ))}
+                </Card>)}
             </div>
           </div>
         </section>
       </main>
       
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default CaseStudiesStartups;
