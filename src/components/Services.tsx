@@ -1,85 +1,113 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Settings, Rocket, Building2, TrendingUp } from "lucide-react";
-const Services = () => {
-  const services = [{
-    icon: TrendingUp,
+import { ArrowUpRight } from "lucide-react";
+
+const services = [
+  {
+    n: "01",
     title: "Funds & Investors",
-    description: "Strategic support for institutional capital",
-    features: ["Fund setup and strategy", "Fundraising support and LP engagement", "Portfolio structuring and secondaries"],
-    color: "text-electric"
-  }, {
-    icon: Building2,
+    description: "Strategic support for institutional capital.",
+    features: [
+      "Fund setup and strategy",
+      "Fundraising support and LP engagement",
+      "Portfolio structuring and secondaries",
+    ],
+    slug: "funds-and-investors",
+  },
+  {
+    n: "02",
     title: "Institutions & Accelerators",
-    description: "Innovation programs and partnerships",
-    features: ["Program and partnership design", "Startup scouting and evaluation", "Market entry and innovation strategy"],
-    color: "text-electric"
-  }, {
-    icon: Rocket,
+    description: "Innovation programs and partnerships.",
+    features: [
+      "Program and partnership design",
+      "Startup scouting and evaluation",
+      "Market entry and innovation strategy",
+    ],
+    slug: "institutions-and-accelerators",
+  },
+  {
+    n: "03",
     title: "Startups & Founders",
-    description: "Growth strategy and market expansion",
-    features: ["Fundraising preparation and investor materials", "Go-to-market and partnership strategy", "Regional expansion and growth planning"],
-    color: "text-electric"
-  }];
-  return <section id="services" className="min-h-screen flex items-center py-24 bg-slate-light/30">
+    description: "Growth strategy and market expansion.",
+    features: [
+      "Fundraising preparation and investor materials",
+      "Go-to-market and partnership strategy",
+      "Regional expansion and growth planning",
+    ],
+    slug: "startups-and-founders",
+  },
+];
+
+const Services = () => {
+  return (
+    <section
+      id="services"
+      className="min-h-screen flex items-center py-24 md:py-32 bg-slate-light/40"
+    >
       <div className="container mx-auto px-6">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center p-2 bg-electric/10 rounded-xl mb-6">
-            <Settings className="w-6 h-6 text-electric" />
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="mb-20 max-w-5xl">
+            <p className="eyebrow mb-6">What we do —</p>
+            <h2 className="display-lg text-foreground">
+              Tailored advisory across the{" "}
+              <span className="editorial-underline">venture ecosystem</span>
+            </h2>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold font-space-grotesk text-foreground mb-6">Services</h2>
-          <div className="w-24 h-1 signal-gradient mx-auto mb-8 rounded-full"></div>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Tailored advisory services across the venture ecosystem
-          </p>
-        </div>
-        
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {services.map((service, index) => {
-          const IconComponent = service.icon;
-          return <Card key={index} className="group hover:shadow-lg signal-transition bg-card/50 backdrop-blur-sm border hover:border-electric/20">
-                <CardContent className="p-8 py-[33px] flex flex-col h-full">
-                  {/* Icon */}
-                  <div className="mb-6">
-                    <div className="w-16 h-16 bg-electric/10 rounded-2xl flex items-center justify-center group-hover:signal-glow signal-transition">
-                      <IconComponent className={`w-8 h-8 ${service.color}`} />
+
+          {/* Stacked editorial rows */}
+          <div className="border-t border-foreground/15">
+            {services.map((service) => (
+              <a
+                key={service.n}
+                href={`/case-studies/${service.slug}`}
+                className="group relative block border-b border-foreground/15 py-10 md:py-14 signal-transition hover:bg-background"
+              >
+                {/* Left accent bar */}
+                <div className="absolute left-0 top-0 bottom-0 w-0 bg-electric group-hover:w-1 signal-transition" />
+
+                <div className="grid md:grid-cols-12 gap-8 md:gap-10 items-start md:pl-6">
+                  {/* Number + title */}
+                  <div className="md:col-span-5">
+                    <div className="flex items-baseline gap-5 mb-4">
+                      <span className="text-sm font-mono text-electric">
+                        {service.n}
+                      </span>
+                      <h3 className="text-2xl md:text-4xl font-bold font-space-grotesk text-foreground leading-tight">
+                        {service.title}
+                      </h3>
                     </div>
+                    <p className="text-muted-foreground md:text-lg leading-relaxed md:ml-12">
+                      {service.description}
+                    </p>
                   </div>
-                  
-                  {/* Content */}
-                  <h3 className="text-2xl font-bold font-space-grotesk text-foreground mb-3">
-                    {service.title}
-                  </h3>
-                  
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    {service.description}
-                  </p>
-                  
+
                   {/* Features */}
-                  <ul className="space-y-3 mb-8">
-                    {service.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-start">
-                        <div className="w-1.5 h-1.5 bg-electric rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="text-sm text-muted-foreground">{feature}</span>
-                      </li>)}
+                  <ul className="md:col-span-5 space-y-3">
+                    {service.features.map((f, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start text-foreground/80"
+                      >
+                        <span className="w-1.5 h-1.5 bg-electric rounded-full mt-2.5 mr-3 flex-shrink-0" />
+                        <span>{f}</span>
+                      </li>
+                    ))}
                   </ul>
-                  
-                   {/* CTA */}
-                   <Button 
-                     variant="outline" 
-                     className="w-full hover:bg-electric/10 hover:border-electric/50 mt-auto"
-                     asChild
-                   >
-                     <a href={`/case-studies/${service.title.toLowerCase().replace(/\s+/g, '-').replace('&', 'and')}`}>
-                       View Case Studies
-                     </a>
-                   </Button>
-                </CardContent>
-              </Card>;
-        })}
+
+                  {/* Link */}
+                  <div className="md:col-span-2 flex md:justify-end">
+                    <span className="inline-flex items-center gap-2 text-sm uppercase tracking-[0.2em] text-foreground group-hover:text-electric signal-transition">
+                      Case studies
+                      <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 signal-transition" />
+                    </span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Services;
