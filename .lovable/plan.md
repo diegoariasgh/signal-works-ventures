@@ -1,76 +1,47 @@
 ## Goal
 
-Refresh the landing page to feel more editorial, cinematic, and visually striking — inspired by sendemo.org — while keeping the existing Signal Works color palette (deep navy, electric blue, slate/cream neutrals) and all current copy, sections, and links.
+Add a new "Featured Projects" section to the landing page that showcases two flagship Signalworks projects, with a link out to each.
 
-## What's "clunky" today
+## Section design
 
-- Every section uses the same recipe: centered icon chip → centered H2 → tiny gradient underline → centered subhead → card grid. Visual monotony.
-- Heavy reliance on bordered white cards with soft shadows — feels SaaS-template, not boutique.
-- Hero typography is large but conventional; no editorial moment.
-- No anchoring imagery or texture; the page reads as a stack of equal-weight blocks.
+Slots in between **Services** and **Testimonials** so the narrative reads: what we do → what we've built → what people say. Same editorial language as the rest of the refreshed page (eyebrow label, oversized headline, hairline-divided rows).
 
-## Design direction (sendemo-inspired, not sendemo-cloned)
+**Section: Featured Projects**
+- Eyebrow: `Featured projects —`
+- Headline: `Research & tools shaping African venture` (with `African venture` underline-accented)
+- Two large editorial cards stacked on mobile, side-by-side on desktop. Each card is a clickable link that opens the project in a new tab.
 
-**Editorial, cinematic, confident.** Borrow these moves:
+**Card 1 — Rethinking Africa VC**
+- Tag row: `Whitepaper · 2025` · `Featured in Oxford Africa Venture Finance Program`
+- Title: `Rethinking Africa VC`
+- Subtitle: `Collaborative research on adapting the venture capital model for Africa.`
+- Short blurb: A whitepaper synthesizing insights from 15 investment professionals, a survey of 50+ investors deploying across Africa, and in-depth interviews with operators running alternative fund models (evergreen funds, venture studios, ESO-linked funds, CVCs).
+- Stats strip: `15 professionals` · `50+ investors surveyed` · `1.5K+ visits / 90 days`
+- CTA: `Read the whitepaper ↗` → https://rethinkingafricavc.lovable.app/
 
-1. **Oversized uppercase display type** as the primary visual element — headlines that span the viewport, tight tracking, underline accents on key phrases (sendemo's signature move).
-2. **Tiny lowercase eyebrow labels** ("signalworks is", "what we do", "trusted by") in place of icon chips + centered H2s.
-3. **Full-bleed hero** with a cinematic navy-gradient background and a scroll cue in the corner. Drop the floating icon chip row — it competes with the headline.
-4. **Asymmetric editorial layouts** instead of centered card grids: left-aligned headlines, two-column splits where one column is type and the other is content, generous negative space.
-5. **Flat, borderless content blocks** with hairline dividers (1px navy/10%) instead of shadowed cards. Cards reserved only for testimonials.
-6. **Minimal top nav** — wordmark left, sparse text links right, single subtle CTA. Replace the hamburger-only header on desktop with inline links (keep hamburger on mobile).
-7. **Sticky section index** on the side (optional, desktop only) showing About / Services / Testimonials / Contact as scroll progresses.
+**Card 2 — Africa Venture Insights Calculator**
+- Tag row: `Interactive tool · 2025` · `Powered by Africa: The Big Deal database`
+- Title: `Africa Venture Insights`
+- Subtitle: `Interactive benchmarking tool for African founders and investors.`
+- Short blurb: Benchmark planned rounds against real African funding data, compare valuations and round sizes by stage, explore funding trends by country and sector, and understand what it takes to return a VC fund.
+- Stats strip: `4,300+ funding rounds` · `2019–2025` · `Country · Sector · Stage filters`
+- CTA: `Open the calculator ↗` → https://insights.signalworks.xyz/
 
-Palette stays exactly: `--navy-deep`, `--electric-blue`, `--slate-light`, plus existing gradients/shadows tokens. No new colors. Typography stays Space Grotesk (already distinctive enough when sized editorially).
+## Visual treatment
 
-## Section-by-section changes
-
-**Header**
-- Desktop: wordmark + inline nav links (About / Services / Testimonials / Contact) + "Book a call" button. Hamburger only below `md`.
-- Transparent over hero, solid navy-on-scroll.
-
-**Hero**
-- Remove the 4-icon chip row.
-- Eyebrow: `signalworks is —` (small, lowercase, slate).
-- Headline: oversized uppercase, two-to-three lines, with underline accent under one key phrase ("MISSION-ALIGNED ADVISORY FOR VENTURE & INNOVATION ACROSS MENA"). Electric-blue underline strokes mimic sendemo's underline rhythm.
-- Subhead unchanged, left-aligned under headline.
-- CTAs left-aligned, not centered.
-- "Scroll" cue bottom-right.
-- "Previous projects" logo strip stays, but moves to its own slim band with a hairline divider above — not crammed into the hero.
-
-**About**
-- Drop the icon chip + centered H2. Use eyebrow `about —` and a left-aligned oversized headline.
-- Two-column editorial split: left = narrative + founder bio (flat, no card), right = the three highlights as a numbered list (01 Regional Depth / 02 Proven Track Record / 03 Speaking & Mentoring) with hairline dividers between rows, not boxed.
-- Founder portrait larger, treated as an editorial image not a tiny avatar.
-
-**Services**
-- Eyebrow `what we do —`, oversized left-aligned headline.
-- Replace the 3-card grid with three full-width stacked rows. Each row: large numeral (01/02/03) + service title + description on the left, bullet features on the right, "View case studies →" as a text link not a button. Hairline divider between rows. Hovering a row reveals an electric-blue accent bar on the left.
-
-**Testimonials**
-- Eyebrow `testimonials —`, oversized headline.
-- Feature the two real quotes large and editorial — full-width quote with massive opening quote mark in electric blue, attribution underneath in small caps. Stack vertically (or 2-up on desktop) instead of 3-card grid.
-- "More quotes coming soon" rendered as a minimal text row, not a card.
-
-**CTA**
-- Keep navy background but go full-bleed editorial: oversized headline left-aligned, supporting copy + buttons in a right column. Drop the glow blobs (feels generic) — replace with a single large electric-blue underline stroke or a subtle grid texture in navy.
-
-**Footer**
-- Unchanged structurally, just align typography to the new system (smaller eyebrow-style labels, hairline divider).
+- Flat cards with hairline border (no shadow), navy hover state, electric-blue accent rule on hover, arrow icon translates on hover — consistent with the new Services row pattern.
+- Numeric eyebrow (01 / 02) on each card to echo the Services and About numbering rhythm.
+- No screenshots in this pass — keeps the section fast and on-brand with the editorial direction. Can add cropped preview imagery later if desired.
 
 ## Technical notes
 
-- All changes are presentation-only: edit `src/components/Header.tsx`, `Hero.tsx`, `About.tsx`, `Services.tsx`, `Testimonials.tsx`, `CTA.tsx`, `Footer.tsx`.
-- No new colors, no new fonts, no new dependencies. Reuse existing tokens in `index.css` (`--electric-blue`, `--navy-deep`, `--gradient-signal`, `signal-transition`).
-- Add 1–2 small utility classes in `index.css` if needed (e.g. `.eyebrow`, `.display-xl`) rather than repeating long Tailwind chains.
-- Keep all copy, links, routes, and case-study placeholders exactly as they are.
-- Keep the existing logo carousel and the two new logos (Manta, IVB).
-- Mobile: collapse oversized type gracefully; keep hamburger nav.
+- New file: `src/components/FeaturedProjects.tsx`.
+- Mount in `src/pages/Index.tsx` between `<Services />` and `<Testimonials />`.
+- Add `featured` to the active-section hook + header nav links (and mobile menu) so it participates in scroll spy.
+- Section id: `work`. Nav label: `Work`.
+- Reuse existing tokens / utility classes (`.eyebrow`, `.display-lg`, `.editorial-underline`, `signal-transition`). No new colors, no new dependencies.
+- Links open in a new tab with `target="_blank" rel="noopener noreferrer"`.
 
 ## Out of scope
 
-- No new color palette, no new fonts, no new imagery generation, no new sections, no copy rewrites, no backend/data changes, no changes to the case-study sub-pages.
-
-## Suggested follow-up (after this redesign lands)
-
-Once the structure feels right, we can optionally add one cinematic hero image or a subtle animated background (e.g. a slow signal-wave SVG) — but I'd recommend landing the typographic refresh first and judging from there.
+- No PDF embedding, no screenshots, no new color/typography tokens, no copy changes elsewhere, no backend.
