@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageSquare, Target, Handshake, DollarSign } from "lucide-react";
+import { ArrowRight, ArrowDown } from "lucide-react";
 import sternLogo from "@/assets/stern-logo.webp";
 import vc4aLogo from "@/assets/vc4a-logo.png";
 import adbLogo from "@/assets/adb-logo.png";
@@ -8,87 +8,103 @@ import plugandplayLogo from "@/assets/plugandplay-logo.png";
 import mantaLogo from "@/assets/manta-logo.png";
 import ivbLogo from "@/assets/ivb-logo.png";
 import heroBackground from "@/assets/hero-gradient-bg.png";
+
+const logos = [
+  { src: plugandplayLogo, alt: "Plug and Play Tech Center", h: "h-6 md:h-7" },
+  { src: sternLogo, alt: "NYU Stern School of Business", h: "h-10 md:h-12" },
+  { src: adbLogo, alt: "African Development Bank", h: "h-8 md:h-10" },
+  { src: vc4aLogo, alt: "VC4A Venture Capital Platform", h: "h-8 md:h-10" },
+  { src: atsfLogo, alt: "Africa Tech Startup Forum", h: "h-8 md:h-10" },
+  { src: mantaLogo, alt: "Manta Ray Ventures", h: "h-8 md:h-10" },
+  { src: ivbLogo, alt: "IVB", h: "h-8 md:h-10" },
+];
+
 const Hero = () => {
-  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      
-      {/* Background Image */}
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-      backgroundImage: `url(${heroBackground})`
-    }}>
-        <div className="absolute inset-0 bg-navy/40"></div>
+  return (
+    <section className="relative min-h-screen flex flex-col overflow-hidden">
+      {/* Background */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      >
+        <div className="absolute inset-0 bg-navy/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/40 via-transparent to-navy"></div>
       </div>
-      
-      {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-2 h-2 bg-electric rounded-full animate-pulse opacity-60"></div>
-      <div className="absolute top-40 right-20 w-1 h-1 bg-electric-light rounded-full animate-pulse opacity-40"></div>
-      <div className="absolute bottom-32 left-1/4 w-1.5 h-1.5 bg-electric rounded-full animate-pulse opacity-50"></div>
-      
+
+      {/* Subtle floating accents */}
+      <div className="absolute top-32 left-10 w-1.5 h-1.5 bg-electric rounded-full animate-pulse opacity-60"></div>
+      <div className="absolute top-1/3 right-16 w-1 h-1 bg-electric-light rounded-full animate-pulse opacity-40"></div>
+
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center">
-        <div className="max-w-4xl mx-auto">
-          {/* Service Areas */}
-          <div className="flex justify-center mb-12">
-            <div className="flex gap-3 p-4 rounded-2xl backdrop-blur-sm bg-gray-200">
-              <div className="flex items-center justify-center p-3 rounded-xl hover:shadow-[0_0_20px_rgba(0,242,254,0.6)] transition-all duration-300 bg-slate-50">
-                <MessageSquare className="w-6 h-6 text-electric" />
-              </div>
-              <div className="flex items-center justify-center p-3 rounded-xl hover:shadow-[0_0_20px_rgba(0,242,254,0.6)] transition-all duration-300 bg-slate-50">
-                <Target className="w-6 h-6 text-electric" />
-              </div>
-              <div className="flex items-center justify-center p-3 rounded-xl hover:shadow-[0_0_20px_rgba(0,242,254,0.6)] transition-all duration-300 bg-slate-50">
-                <Handshake className="w-6 h-6 text-electric" />
-              </div>
-              <div className="flex items-center justify-center p-3 rounded-xl hover:shadow-[0_0_20px_rgba(0,242,254,0.6)] transition-all duration-300 bg-slate-50">
-                <DollarSign className="w-6 h-6 text-electric" />
-              </div>
-            </div>
-          </div>
-          
-          <h1 className="text-5xl md:text-7xl font-bold font-space-grotesk text-white mb-10 leading-tight">
-            <span className="block text-electric font-black">Mission-Aligned.</span>
-            <span className="block font-black">Outcome-Driven.</span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-slate-light mb-12 max-w-3xl mx-auto leading-relaxed font-medium">Boutique advisory supporting funds, startups, and corporates in venture and innovation across the MENA region.</p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-24">
-            <Button variant="signal" size="lg" className="group" asChild>
-              <a href="mailto:diego@signalworks.xyz">
-                Get in Touch
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 signal-transition" />
-              </a>
-            </Button>
-            
-            <Button variant="outline-light" size="lg" asChild>
-              <a href="#about">Learn More</a>
-            </Button>
-          </div>
-          
-          {/* Previous Projects */}
-          <div className="pt-12 pb-20 border-t border-white/10">
-            <p className="text-slate-light/80 text-sm mb-12 tracking-wide uppercase">Previous projects</p>
-            <div className="overflow-hidden">
-              <div className="flex items-center gap-16 md:gap-20 animate-[scroll_20s_linear_infinite] w-fit">
-                <img src={plugandplayLogo} alt="Plug and Play Tech Center - Signal Works Partner" width="120" height="28" loading="lazy" className="h-6 md:h-7 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
-                <img src={sternLogo} alt="NYU Stern School of Business - Signal Works Partner" width="180" height="48" loading="lazy" className="h-10 md:h-12 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
-                <img src={adbLogo} alt="African Development Bank - Signal Works Partner" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
-                <img src={vc4aLogo} alt="VC4A Venture Capital Platform - Signal Works Partner" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
-                <img src={atsfLogo} alt="Africa Tech Startup Forum - Signal Works Partner" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
-                <img src={mantaLogo} alt="Manta Ray Ventures - Signal Works Partner" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
-                <img src={ivbLogo} alt="IVB - Signal Works Partner" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
-                {/* Duplicate logos for seamless loop */}
-                <img src={plugandplayLogo} alt="Plug and Play Tech Center" width="120" height="28" loading="lazy" className="h-6 md:h-7 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
-                <img src={sternLogo} alt="NYU Stern School of Business" width="180" height="48" loading="lazy" className="h-10 md:h-12 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
-                <img src={adbLogo} alt="African Development Bank" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
-                <img src={vc4aLogo} alt="VC4A Venture Capital Platform" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
-                <img src={atsfLogo} alt="Africa Tech Startup Forum" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
-                <img src={mantaLogo} alt="Manta Ray Ventures" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
-                <img src={ivbLogo} alt="IVB" width="160" height="40" loading="lazy" className="h-8 md:h-10 w-auto object-contain filter brightness-0 invert opacity-70 hover:brightness-100 hover:invert-0 hover:opacity-100 transition-all duration-300 drop-shadow-sm flex-shrink-0" />
-              </div>
+      <div className="relative z-10 flex-1 flex items-center pt-32 pb-16">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl">
+            <p className="eyebrow-light mb-8">signalworks is —</p>
+
+            <h1 className="display-xl text-white mb-10">
+              <span className="block">
+                <span className="editorial-underline">Mission-aligned</span>{" "}
+                advisory
+              </span>
+              <span className="block">for venture &amp;</span>
+              <span className="block">
+                innovation across{" "}
+                <span className="text-electric">MENA</span>
+              </span>
+            </h1>
+
+            <p className="text-lg md:text-xl text-slate-light/80 max-w-2xl leading-relaxed mb-12">
+              Boutique advisory supporting funds, startups, and corporates in
+              venture and innovation across the MENA region.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+              <Button variant="signal" size="lg" className="group" asChild>
+                <a href="mailto:diego@signalworks.xyz">
+                  Get in Touch
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 signal-transition" />
+                </a>
+              </Button>
+              <Button variant="outline-light" size="lg" asChild>
+                <a href="#about">Learn More</a>
+              </Button>
             </div>
           </div>
         </div>
       </div>
-    </section>;
+
+      {/* Scroll cue */}
+      <div className="relative z-10 hidden md:flex items-center justify-end container mx-auto px-6 pb-8">
+        <a
+          href="#about"
+          className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-slate-light/60 hover:text-electric signal-transition"
+        >
+          Scroll
+          <ArrowDown className="w-4 h-4" />
+        </a>
+      </div>
+
+      {/* Previous projects strip */}
+      <div className="relative z-10 border-t border-white/10 bg-navy/40 backdrop-blur-sm">
+        <div className="container mx-auto px-6 py-8">
+          <p className="eyebrow-light mb-6">Previous projects —</p>
+          <div className="overflow-hidden">
+            <div className="flex items-center gap-16 md:gap-20 animate-[scroll_25s_linear_infinite] w-fit">
+              {[...logos, ...logos].map((logo, i) => (
+                <img
+                  key={i}
+                  src={logo.src}
+                  alt={logo.alt}
+                  loading="lazy"
+                  className={`${logo.h} w-auto object-contain filter brightness-0 invert opacity-60 hover:opacity-100 signal-transition flex-shrink-0`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
+
 export default Hero;
